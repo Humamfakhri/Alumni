@@ -1,0 +1,108 @@
+:root {
+  --teks: #1C3547;
+  --teks2: #5E6972;
+  --primary: #E4262C;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  color: var(--teks);
+}
+
+.sementara {
+  margin-bottom: 1000px;
+}
+/* NAVBAR */
+.navbar {
+  transition: .2s;
+}
+.navbar-brand img {
+  width: 70px;
+}
+.nav-brand-d {
+  display: none;
+}
+.nav-brand-ms {
+  display: none;
+}
+.nav-link {
+  font-size: 12px;
+}
+.navbar-nav > .active {
+  font-weight: 600;
+}
+    /* nav-scrolled */
+    .nav-scrolled {
+      transition: .2s;
+      background-color: #fff;
+      box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+    }
+    .nav-scrolled .nav-brand-m {
+      display: none;
+    }
+    .nav-scrolled .nav-brand-ms {
+      display: block;
+    }
+/* NAVBAR end */
+
+/* ===== TABLET ===== */
+@media screen and (min-width:768px) {
+  .navbar-brand img {
+    width: 110px;
+  }
+}
+
+/* DESKTOP */
+@media screen and   (min-width:992px) {
+  .navbar {
+    transition: .2s;
+  }
+  .nav-scrolled {
+    transition: .2s;
+  }
+  .nav-scrolled .nav-link {
+    font-size: 15px;
+  }
+  .nav-brand-d {
+    display: block;
+    width: 110px;
+    transition: .2s;
+  }
+  .nav-scrolled .nav-brand-m {
+    display: none;
+  }
+  .nav-scrolled .nav-brand-ms {
+    display: none;
+  }
+  .nav-brand-m {
+    display: none;
+  }
+  .nav-brand-ms {
+    display: none;
+  }
+  .nav-scrolled .navbar-brand > img {
+    width: 100px;
+  }
+  .nav-link {
+    transition: .2s;
+  }
+  .nav-link::after {
+    content: '';
+    display: block;
+    background-color: var(--primary);
+    height: 2px;
+    width: 30px;
+    margin: 0 auto;
+    transform: scale(0);
+    transition: .2s;
+  }
+  .nav-link:hover::after {
+    transform: scale(1);
+  }
+  .navbar-nav > .active::after {
+    transform: scale(1);
+  }
+  .navbar-nav > .active {
+    font-weight: normal;
+  }
+}

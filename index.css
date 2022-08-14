@@ -6,70 +6,92 @@
 
 * {
   font-family: 'Poppins', sans-serif;
+  color: var(--teks);
 }
 
 .sementara {
   margin-bottom: 1000px;
 }
-/* NAVBAR */
-.navbar-brand img {
-  width: 100px;
+
+/* HERO */
+.hero {
+  position: relative;
 }
-.navbar-nav > .active {
+.hero-d {
+  display: none;
+}
+.hero-m {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+/* .hero::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(img/hero-m.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: auto; 
+  height: 100%;
+  top: 0;
+  z-index: -1;
+} */
+.hero .teks {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
   font-weight: 600;
 }
-    /* nav-scrolled */
-    .nav-scrolled {
-      box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
-    }
-/* NAVBAR end */
+.hero .teks h1 {
+  color: #fff;
+}
+.hero p {
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Epilogue', sans-serif;
+}
+.hero h1 span {
+  color: var(--primary);
+}
+/* HERO end */
 
 
 /* ===== TABLET ===== */
 @media screen and (min-width:768px) {
-  .navbar-brand img {
-    width: 110px;
-  }
+  
 }
 
 /* DESKTOP */
 @media screen and   (min-width:992px) {
-  .navbar {
-    transition: .2s;
+  
+
+  /* HERO */
+  .hero {
+    position: unset;
   }
-  .nav-scrolled {
-    transition: .2s;
+  .hero h1 {
+    font-size: 48px;
+    margin-top: 100px;
+    transform: translateY(0);
+    position: static;
+    text-align: left;
+    color: var(--teks);
   }
-  .nav-scrolled .nav-link {
-    font-size: 15px;
+  .hero p {
+    font-size: 23px;
   }
-  .navbar-brand img {
-    width: 110px;
-    transition: .2s;
+  .hero-d {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
-  .nav-scrolled .navbar-brand > img {
-    width: 100px;
+  .hero-m {
+    display: none;
   }
-  .nav-link {
-    transition: .2s;
-  }
-  .nav-link::after {
-    content: '';
-    display: block;
-    background-color: var(--primary);
-    height: 2px;
-    width: 30px;
-    margin: 0 auto;
-    transform: scale(0);
-    transition: .2s;
-  }
-  .nav-link:hover::after {
-    transform: scale(1);
-  }
-  .navbar-nav > .active::after {
-    transform: scale(1);
-  }
-  .navbar-nav > .active {
-    font-weight: normal;
-  }
+  /* HERO end */
 }

@@ -9,28 +9,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;400;500;700&family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="shortcut icon" href="img/TS.png" type="image/x-icon">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="alumni.css">
   </head>
   <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top p-0 py-lg-2 navbar-dark">  
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="img/TS Primer White.png" alt="SMK Telkom Bandung Icon" class="nav-brand-m">
           <img src="img/TS Primer.png" alt="SMK Telkom Bandung Icon" class="nav-brand-ms">
           <img src="img/TS Primer.png" alt="SMK Telkom Bandung Icon" class="nav-brand-d">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link me-lg-3 ms-lg-4 active" aria-current="page" href="index.html">Beranda</a>
+            <a class="nav-link me-lg-3 ms-lg-5 active" aria-current="page" href="index.html">Beranda</a>
             <a class="nav-link me-lg-3 " href="aktivitas.html">Aktivitas</a>
             <a class="nav-link me-lg-3" href="alumni.html">Alumni</a>
             <a class="nav-link" href="kontak.html">Kontak</a>
+          </div>
+        </div>
+        <div class="burger">
+          <input type="checkbox" id="checkbox" onclick="sidebar()">
+          <div class="garis"></div>
+          <div class="garis my-1"></div>
+          <div class="garis"></div>
+          <div class="burger-box">
+            <ul class="m-0">
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="aktivitas.html">Aktivitas</a></li>
+              <li><a href="alumni.html" class="aktif">Alumni</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -39,13 +49,10 @@
 
     <!-- HERO -->
     <section class="hero">
-      <img src="img/hero-m.png" class="hero-m">
-      <div class="container">
-        <div class="teks">
-          <h1>Buatlah <span>kenangan</span><br>untuk masa depan</h1>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-        <img src="img/hero.png" alt="" class="hero-d">
+      <img src="img/alumni.png" alt="" class="img-fluid">
+      <div class="hero-text">
+        <h1 class="text-white">Alumni SMK Telkom Bandung</h1>
+        <p class="text-white">Temukan data alumni yang diinginkan</p>
       </div>
     </section>
     <!-- HERO end -->
@@ -54,11 +61,25 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
   <script>
+    // window.addEventListener('scroll', function(){
+    //     let header = document.querySelector('nav');
+    //     let windowPosition = window.scrollY > 0;
+
+    //     header.classList.toggle('nav-scrolled', windowPosition);
+    // });
     window.addEventListener('scroll', function(){
         let header = document.querySelector('nav');
         let windowPosition = window.scrollY > 0;
 
         header.classList.toggle('nav-scrolled', windowPosition);
+        if (window.scrollY > 0) {
+          header.classList.remove('navbar-dark');
+          header.classList.add('navbar-light');
+        } else {
+          header.classList.add('navbar-dark');
+          header.classList.remove('navbar-light');
+        }
+        
     });
   </script>
   </body>
