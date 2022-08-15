@@ -145,10 +145,81 @@
   font-size: 12px;
 }
 
+/* SECTION 1 */
+.pencarian {
+  margin-top: 20px;
+}
+.berdasarkan a {
+  font-size: 0.6rem;
+  text-decoration: none;
+}
+.berdasarkan a:hover {
+  text-decoration: underline;
+}
+.vertical-line {
+  background-color: var(--teks2);
+  width: 0.01rem;
+  height: 0.5rem;
+  margin: auto 0;
+}
+.current {
+  font-weight: 600;
+}
+.btn {
+  background-color: var(--primary);
+}
+.btn:hover {
+  background-color: var(--primary);
+  opacity: 0.8;
+}
+.btn > img {
+  width: 10px;
+}
+input[type="text"], #inputState, .btn
+{
+  font-size: 0.6rem;
+  border-radius: 20px;
+  border: 1px solid #969696;
+  padding: 3px 10px;
+  font-family: var(--epi);
+}
+
+form input,
+input::-webkit-input-placeholder {
+  font-size: 0.6rem;
+  line-height: 3;
+}
+
 
 @media screen and (min-width: 575px) {
   .navbar-brand img {
     width: 80px;
+  }
+  /* HERO */
+  .hero img {
+    margin-top: -10rem;
+  }
+  .berdasarkan a {
+    font-size: 1rem;
+  }
+  .vertical-line {
+    height: 0.8rem;
+  }
+  input[type="text"], #inputState, .btn
+  {
+    font-size: 0.8rem;
+    border-radius: 20px;
+    border: 1px solid #969696;
+    padding: 6px 15px;
+    font-family: var(--epi);
+  }
+  form input,
+  input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+    line-height: 3;
+  }
+  .btn > img {
+    width: 15px;
   }
 }
 
@@ -192,5 +263,29 @@
   }
   .hero-text h1 {
     font-weight: 700;
+  }
+
+  /* SECTION PENCARIAN */
+  .berdasarkan a {
+    font-size: 1.25rem;
+  }
+  .vertical-line {
+    height: 1rem;
+  }
+  input[type="text"], #inputState, .btn
+  {
+    font-size: 1.1rem;
+    border-radius: 20px;
+    border: 1px solid #969696;
+    padding: 6px 15px;
+    font-family: var(--epi);
+  }
+  form input,
+  input::-webkit-input-placeholder {
+    font-size: 1.1rem;
+    line-height: 3;
+  }
+  .btn > img {
+    width: 15px;
   }
 }
