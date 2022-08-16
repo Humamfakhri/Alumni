@@ -19,7 +19,7 @@
   transition: .2s;
 }
 .navbar-brand img {
-  width: 60px;
+  width: 90px;
 }
 .nav-brand-d {
   display: none;
@@ -51,6 +51,12 @@
     .nav-scrolled .nav-brand-ms {
       display: block;
     }
+    .nav-scrolled .burger .garis {
+      background-color: var(--teks);
+    }
+    .nav-scrolled .burger {
+      margin-bottom: 5px;
+    }
 .burger {
   position: relative;
   height: 14px;
@@ -64,45 +70,48 @@
 }
 .burger .garis {
   background-color: #fff;
-  width: 20px;
+  width: 25px;
   height: 2px;
   transition: .2s;
+}
+.burger .garis:nth-last-child(3) {
+  margin: 6px 0;
 }
 .burger ul li {
   text-decoration: none;
   list-style: none;
 }
 .burger input:checked ~ .garis:nth-child(2) {
-  transform: rotate(45deg) translate(2px, 6px);
+  transform: rotate(45deg) translate(5px, 6px);
 }
 .burger input:checked ~ .garis:nth-child(3) {
   transform: scale(0);
 }
 .burger input:checked ~ .garis:nth-child(4) {
-  transform: rotate(-45deg) translate(2px, -6px);
+  transform: rotate(-45deg) translate(5px, -6px);
 }
 .burger-box {
   position: absolute;
   right: 0;
-  top: 25px;
+  top: 30px;
   border-radius: 7px;
-  background-color: aliceblue;
+  background-color: #fff;
   transform: scale(0);
   transition: all .2s;
-  transform-origin: 75% 0;
+  transform-origin: 85% 0;
 }
 .burger input:checked ~ .burger-box {
   transform: scale(1);
   transition: all .2s;
 }
 .burger-box ul {
-  padding: 2px 10px 7px;
+  padding: 8px 15px;
 }
 .burger-box ul li {
-  line-height: 1.3;
+  line-height: 1.6;
 }
 .burger-box a {
-  font-size: 9px;
+  font-size: 0.9rem;
   text-decoration: none;
   color: #5E6972;
 }
@@ -119,7 +128,7 @@
 }
 .hero-text {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 0;
   right: 0;
   text-align: center;
@@ -134,10 +143,10 @@
   margin: 10px auto;
 }
 .hero-text h1 {
-  font-size: clamp(0.1rem, 4vw + 0.1rem, 3.5rem);
+  font-size: clamp(0.1rem, 5.5vw + 0.1rem, 3.5rem);
 }
 .hero-text p {
-  font-size: clamp(0.1rem, 2vw + 0.1rem, 3.5rem);
+  font-size: clamp(0.1rem, 3vw + 0.1rem, 3.5rem);
   font-family: var(--epi);
   font-weight: 400;
 }
@@ -151,7 +160,7 @@
   margin-bottom: 1000px;
 }
 .berdasarkan a {
-  font-size: 0.6rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 .berdasarkan a:hover {
@@ -174,19 +183,19 @@
   opacity: 0.8;
 }
 .cari > img {
-  width: 10px;
+  width: 15px;
 }
 input[type="text"], #inputState, .cari
 {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   border-radius: 20px;
   border: 1px solid #969696;
-  padding: 3px 10px;
+  padding: 5px 14px;
   font-family: var(--epi);
 }
 form input,
 input::-webkit-input-placeholder {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   line-height: 3;
 }
 .card {
@@ -196,6 +205,9 @@ input::-webkit-input-placeholder {
   box-shadow:none;
   border: 1px solid #c5c5c5;
   transform: scale(0.97);
+}
+.card img {
+  border-radius: 100%;
 }
 .card-body {
   padding-bottom: 0;
@@ -210,29 +222,31 @@ input::-webkit-input-placeholder {
   transition: .2s;
 }
 .card-name {
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0;
+  margin-bottom: 5px;
 }
 .card-class {
   background-color: #003DB5;
   color: #fff;
   border-radius: 20px;
-  font-size: 0.65rem;
+  font-size: 0.9rem;
   display: inline;
-  padding: 3px 8px 3px 8px;
+  padding: 3px 12px;
 }
 .card-year {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 .card-status {
-  font-size: 0.65rem;
+  font-size: 0.9rem;
 }
 .card-status span {
   color: var(--primary);
 }
 .next {
   border-radius: 20px;
+  font-size: 0.8rem;
 }
 
 /* FOOTER */
