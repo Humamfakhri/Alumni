@@ -166,17 +166,17 @@
 .current {
   font-weight: 600;
 }
-.btn {
+.cari {
   background-color: var(--primary);
 }
-.btn:hover {
+.cari:hover {
   background-color: var(--primary);
   opacity: 0.8;
 }
-.btn > img {
+.cari > img {
   width: 10px;
 }
-input[type="text"], #inputState, .btn
+input[type="text"], #inputState, .cari
 {
   font-size: 0.6rem;
   border-radius: 20px;
@@ -189,7 +189,6 @@ input::-webkit-input-placeholder {
   font-size: 0.6rem;
   line-height: 3;
 }
-
 .card {
   border-radius: 10px;
   border: none;
@@ -232,6 +231,21 @@ input::-webkit-input-placeholder {
 .card-status span {
   color: var(--primary);
 }
+.next {
+  border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+}
+.background {
+  background-color: #F5F5F5;
+  height: 50vh;
+  width: 100%;
+}
+footer img {
+  max-width: 150px;
+}
 
 
 @media screen and (min-width: 575px) {
@@ -248,7 +262,7 @@ input::-webkit-input-placeholder {
   .vertical-line {
     height: 0.8rem;
   }
-  input[type="text"], #inputState, .btn
+  input[type="text"], #inputState, .cari
   {
     font-size: 0.8rem;
     border-radius: 20px;
@@ -261,7 +275,7 @@ input::-webkit-input-placeholder {
     font-size: 0.8rem;
     line-height: 3;
   }
-  .btn > img {
+  .cari > img {
     width: 15px;
   }
 
@@ -339,7 +353,7 @@ input::-webkit-input-placeholder {
   .vertical-line {
     height: 1rem;
   }
-  input[type="text"], #inputState, .btn
+  input[type="text"], #inputState, .cari
   {
     font-size: 1.1rem;
     border-radius: 20px;
@@ -352,7 +366,7 @@ input::-webkit-input-placeholder {
     font-size: 1.1rem;
     line-height: 3;
   }
-  .btn > img {
+  .cari > img {
     width: 15px;
   }
 
