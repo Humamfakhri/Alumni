@@ -8,11 +8,11 @@
   font-family: 'Poppins', sans-serif;
 }
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .sementara {
-  margin-bottom: 150vh;
+  margin-bottom: 100vh;
 }
 /* NAVBAR */
 .navbar-brand img {
@@ -34,7 +34,7 @@ body {
   transition: none;
   color: #fff !important;
 }
-.nav-link:hover::after {
+.nav-link:hover::after, .active::after {
   content: '';
   display: block;
   position: absolute;
@@ -52,27 +52,12 @@ body {
   position: relative;
   color: #fff !important;
 }
-.active::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 80%;
-  border-radius: 20px;
-  background-color: var(--primary);
-}
 /* NAVBAR end */
 
 /* FOOTER */
 footer {
   background-color: #F5F5F5;
-  width: 120%;
-  margin-left: -10%;
+  width: 100%;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
 }
@@ -101,7 +86,7 @@ footer .footer-icon img {
   transform: translateY(-50%);
   max-width: 60%;
 }
-footer .row a:nth-child(2) img {
+footer .d-flex a:nth-child(2) img {
   max-width: 35%;
 }
 footer p {
@@ -134,56 +119,4 @@ footer hr {
 
 /* DESKTOP */
 @media screen and   (min-width:992px) {
-  .navbar {
-    transition: .2s;
-  }
-  .nav-scrolled {
-    transition: .2s;
-  }
-  .nav-scrolled .nav-link {
-    font-size: 15px;
-  }
-  .nav-scrolled .navbar-brand > img {
-    width: 100px;
-  }
-  .nav-link {
-    transition: .2s;
-  }
-  /* .nav-link::after {
-    content: '';
-    display: block;
-    background-color: var(--primary);
-    height: 2px;
-    width: 30px;
-    margin: 0 auto;
-    transform: scale(0);
-    transition: .2s;
-  }
-  .nav-link:hover::after {
-    transform: scale(1);
-  }
-  .navbar-nav > .active::after {
-    transform: scale(1);
-  } */
-  .active {
-    position: relative;
-    color: #fff !important;
-  }
-  .active::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 80%;
-    border-radius: 20px;
-    background-color: var(--primary);
-  }
-  .navbar-nav > .active {
-    font-weight: normal;
-  }
 }
