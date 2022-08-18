@@ -7,9 +7,6 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
-body {
-  /* overflow-x: hidden; */
-}
 
 .sementara {
   margin-bottom: 100vh;
@@ -22,6 +19,7 @@ body {
   font-weight: 600;
 }
 .nav-scrolled {
+  background-color: #fff;
   box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
 }
 .navbar-toggler {
@@ -58,17 +56,20 @@ body {
 footer {
   background-color: #F5F5F5;
   width: 100%;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
 }
-footer img {
-  width: clamp(120px, 20vw, 200px);
+footer .smktelkom {
+  width: clamp(9.38rem, calc(7.67rem + 8.54vw), 13.75rem);;
+}
+footer .sekunder {
+  width: clamp(7.50rem, calc(6.77rem + 3.66vw), 9.38rem);
 }
 footer .footer-icon {
   border-radius: 100%;
   background-color: #D9D9D9;
-  width: clamp(2.50rem, calc(2.26rem + 1.22vw), 3.13rem);;
-  height: clamp(2.50rem, calc(2.26rem + 1.22vw), 3.13rem);;
+  width: clamp(2.50rem, calc(2.26rem + 1.22vw), 3rem);;
+  height: clamp(2.50rem, calc(2.26rem + 1.22vw), 3rem);;
   transform: scale(.9);
   transition: .1s;
 }

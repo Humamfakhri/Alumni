@@ -1,0 +1,59 @@
+:root {
+  --teks: #1C3547;
+  --teks2: #5E6972;
+  --primary: #E4262C;
+  --epi: 'Epilogue', sans-serif;
+  --pop: 'Poppins', sans-serif;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  padding-top: 5rem;
+}
+.hero img {
+  width: clamp(21.88rem, calc(14.56rem + 36.59vw), 40.63rem);
+}
+.heading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 60%;
+  transform: translateY(-50%);
+  color: var(--teks);
+}
+.heading h1 {
+  font-size: clamp(1.88rem, calc(1.63rem + 1.22vw), 2.50rem);
+  font-weight: bold;
+}
+.heading h1::after {
+  content: '';
+  display: block;
+  background-color: var(--primary);
+  height: 2px;
+  width: 6rem;
+  margin: 10px auto;
+}
+.heading p {
+  font-family: var(--epi);
+  font-size: clamp(0.94rem, calc(0.82rem + 0.61vw), 1.25rem);
+}
+
+/* POSTINGAN */
+.pencarian input, .pencarian select {
+  font-family: var(--epi);
+  color: var(--teks2);
+  border-radius: 20px;
+}
+
+
+/* @media screen and (max-width:575px) {
+  .heading h1 {
+    font-size: 30px;
+  }
+} */
