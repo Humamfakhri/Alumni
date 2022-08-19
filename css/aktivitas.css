@@ -10,6 +10,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* NAVBAR */
+.navbar  {
+  background-color: #fff;
+}
+.nav-scrolled {
+  background-color: #fff;
+}
 /* HERO */
 .hero {
   position: relative;
@@ -50,7 +57,51 @@
   color: var(--teks2);
   border-radius: 20px;
 }
-
+.cards a , .card {
+  text-decoration: none;
+  color: var(--teks2);
+  transform: scale(.99);
+  transition: .2s;
+}
+.card {
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+  transform: scale(1);  
+  transition: .2s;
+}
+.username a {
+  font-weight: 600;
+  font-family: var(--epi);
+}
+.username a:hover {
+  text-decoration: underline;
+}
+.username img {
+  border-radius: 100%;
+  width: 30px;
+}
+.icons img {
+  scale: .8;
+}
+.icons i {
+  /* font-size: 22px; */
+  font-size: 18px;
+}
+.card-title {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+.card-paragraph, .icons p {
+  font-size: .9rem;
+  font-family: var(--epi);
+}
+.card-time {
+  font-size: .7rem;
+  font-family: var(--epi);
+}
 
 /* @media screen and (max-width:575px) {
   .heading h1 {

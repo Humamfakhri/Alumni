@@ -5,3 +5,5 @@ forEach(link => {
     link.classList.add('active');
   }
 });
+
+like = (icon) => icon.classList.toggle('fa-solid');
