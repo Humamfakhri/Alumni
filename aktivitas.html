@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="css/aktivitas.css">
   </head>
   <body>
-
+  <a id="top"></a>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="img/TS Primer.png" alt="SMK Telkom Bandung Icon">
@@ -45,10 +45,11 @@
       <p>Postingan aktivitas-aktivitas para Alumni SMK Telkom Bandung</p>
     </div>
   </section>
+  <a href="#top" class="top"><i class="fa-solid fa-circle-chevron-up"></i></a>
 
   <!-- SECTION -->
     <!-- PENCARIAN -->
-  <section class="pencarian">
+  <section class="pencarian mb-5">
     <div class="container">
       <div class="row g-2 g-lg-3 mb-5">
         <div class="col-lg-3 col-7">
@@ -63,203 +64,144 @@
         </div>
       </div>
       <!-- CARDS -->
-      <div class="row cards gy-lg-4 gx-lg-3 g-1">
-        <div class="col-lg-3 col-md-4 col-6">
-          <a href="#">
-            <div class="card">
-              <div class="username px-3 py-2 d-flex align-items-center">
-                <img src="img/profile1.jpg" alt="">
-                <a href="#" class="ms-1 small">humamfakhri (7)</a>
-              </div>
+      <div class="row cards gy-lg-4 gx-lg-3 gy-md-3 gx-md-2 g-1">
+        <div class="col-lg-3 col-md-4 col">
+          <div class="card">
+            <div class="username d-flex align-items-center px-3 py-2">
+              <a href="#username" class="avatar d-flex align-items-center">
+                <img src="img/profile1.jpg" alt="" class="me-1">
+                <p class="d-inline my-0">humamfakhri</p>
+              </a>
+              <a href="#angkatan" class="ps-2 ms-auto angkatan">(7)</a>
+            </div>
+            <a href="#post" class="card-pic">
               <img src="img/Akt-1.jpg" class="card-img-top" alt="...">
-              <div class="card-body pb-2 pt-2">
-                <div class="icons mb-2">
-                  <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
-                  <a href="#" class="mx-lg-3 mx-1"><i class="fa-regular fa-comment-dots"></i></a>
-                  <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                  <p class="float-lg-end mt-1">123 likes</p>
-                </div>
-                <div class="card-text">
+              <p class="lihat text-light">Lihat</p>
+            </a>
+            <div class="card-body pb-2 pt-2">
+              <div class="card-text">
+                <a href="#post">
                   <div class="card-title">Tips Mencari Ide</div>
-                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek post...</div>
-                  <div class="card-time mt-2 text-end">2 jam lalu</div>
-                </div>
+                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek postingan ini, siapa tau bermanfaat dan bisa membantu kalian agar lebih baik ke depannya.</div>
+                </a>
+              </div>
+              <div class="icons d-flex justify-content-between align-items-center my-2">
+                <div class="card-time">2 jam lalu</div>
+                <!-- <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
+                <a href="#" class="mx-3"><i class="fa-regular fa-comment-dots"></i></a> -->
+                <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
+                <!-- <p class="float-lg-end mt-1">212 likes</p> -->
               </div>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <a href="#">
-            <div class="card">
-              <div class="username px-3 py-2 d-flex align-items-center">
-                <img src="img/profile2.jpg" alt="">
-                <a href="" class="ms-1 small">ibadillah (6)</a>
-              </div>
+        <div class="col-lg-3 col-md-4 col">
+          <div class="card">
+            <div class="username d-flex align-items-center px-3 py-2">
+              <a href="#username" class="avatar d-flex align-items-center">
+                <img src="img/profile2.jpg" alt="" class="me-1">
+                <p class="d-inline my-0">johnson</p>
+              </a>
+              <a href="#angkatan" class="ps-2 ms-auto angkatan">(5)</a>
+            </div>
+            <a href="#post" class="card-pic">
               <img src="img/Akt-2.jpg" class="card-img-top" alt="...">
-              <div class="card-body pb-2 pt-2">
-                <div class="icons mb-2">
-                  <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
-                  <a href="#" class="mx-lg-3 mx-1"><i class="fa-regular fa-comment-dots"></i></a>
-                  <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                  <p class="float-end mt-1">123 likes</p>
-                </div>
-                <div class="card-text">
+              <p class="lihat text-light">Lihat</p>
+            </a>
+            <div class="card-body pb-2 pt-2">
+              <div class="card-text">
+                <a href="#post">
                   <div class="card-title">Tips Mencari Ide</div>
-                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek post...</div>
-                  <div class="card-time mt-2 text-end">2 jam lalu</div>
-                </div>
+                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek postingan ini, siapa tau bermanfaat dan bisa membantu kalian agar lebih baik ke depannya.</div>
+                </a>
+              </div>
+              <div class="icons d-flex justify-content-between align-items-center my-2">
+                <div class="card-time">2 jam lalu</div>
+                <!-- <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
+                <a href="#" class="mx-3"><i class="fa-regular fa-comment-dots"></i></a> -->
+                <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
+                <!-- <p class="float-lg-end mt-1">212 likes</p> -->
               </div>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <a href="#">
-            <div class="card">
-              <div class="username px-3 py-2 d-flex align-items-center">
-                <img src="img/profile3.jpg" alt="">
-                <a href="" class="ms-1 small">rizky (3)</a>
-              </div>
+        <div class="col-lg-3 col-md-4 col">
+          <div class="card">
+            <div class="username d-flex align-items-center px-3 py-2">
+              <a href="#username" class="avatar d-flex align-items-center">
+                <img src="img/profile3.jpg" alt="" class="me-1">
+                <p class="d-inline my-0">gunawan</p>
+              </a>
+              <a href="#angkatan" class="ps-2 ms-auto angkatan">(2)</a>
+            </div>
+            <a href="#post" class="card-pic">
               <img src="img/Akt-3.jpg" class="card-img-top" alt="...">
-              <div class="card-body pb-2 pt-2">
-                <div class="icons mb-2">
-                  <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
-                  <a href="#" class="mx-lg-3 mx-1"><i class="fa-regular fa-comment-dots"></i></a>
-                  <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                  <p class="float-end mt-1">123 likes</p>
-                </div>
-                <div class="card-text">
+              <p class="lihat text-light">Lihat</p>
+            </a>
+            <div class="card-body pb-2 pt-2">
+              <div class="card-text">
+                <a href="#post">
                   <div class="card-title">Tips Mencari Ide</div>
-                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek post...</div>
-                  <div class="card-time mt-2 text-end">2 jam lalu</div>
-                </div>
+                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek postingan ini, siapa tau bermanfaat dan bisa membantu kalian agar lebih baik ke depannya.</div>
+                </a>
+              </div>
+              <div class="icons d-flex justify-content-between align-items-center my-2">
+                <div class="card-time">2 jam lalu</div>
+                <!-- <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
+                <a href="#" class="mx-3"><i class="fa-regular fa-comment-dots"></i></a> -->
+                <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
+                <!-- <p class="float-lg-end mt-1">212 likes</p> -->
               </div>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <a href="#">
-            <div class="card">
-              <div class="username px-3 py-2 d-flex align-items-center">
-                <img src="img/profile4.jpg" alt="">
-                <a href="" class="ms-1 small">syahrul (4)</a>
-              </div>
+        <div class="col-lg-3 col-md-4 col">
+          <div class="card">
+            <div class="username d-flex align-items-center px-3 py-2">
+              <a href="#username" class="avatar d-flex align-items-center">
+                <img src="img/profile4.jpg" alt="" class="me-1">
+                <p class="d-inline my-0">asep</p>
+              </a>
+              <a href="#angkatan" class="ps-2 ms-auto angkatan">(3)</a>
+            </div>
+            <a href="#post" class="card-pic">
               <img src="img/Akt-4.jpg" class="card-img-top" alt="...">
-              <div class="card-body pb-2 pt-2">
-                <div class="icons mb-2">
-                  <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
-                  <a href="#" class="mx-lg-3 mx-1"><i class="fa-regular fa-comment-dots"></i></a>
-                  <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                  <p class="float-end mt-1">123 likes</p>
-                </div>
-                <div class="card-text">
+              <p class="lihat text-light">Lihat</p>
+            </a>
+            <div class="card-body pb-2 pt-2">
+              <div class="card-text">
+                <a href="#post">
                   <div class="card-title">Tips Mencari Ide</div>
-                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek post...</div>
-                  <div class="card-time mt-2 text-end">2 jam lalu</div>
-                </div>
+                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek postingan ini, siapa tau bermanfaat dan bisa membantu kalian agar lebih baik ke depannya.</div>
+                </a>
+              </div>
+              <div class="icons d-flex justify-content-between align-items-center my-2">
+                <div class="card-time">2 jam lalu</div>
+                <!-- <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
+                <a href="#" class="mx-3"><i class="fa-regular fa-comment-dots"></i></a> -->
+                <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
+                <!-- <p class="float-lg-end mt-1">212 likes</p> -->
               </div>
             </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <a href="#">
-            <div class="card">
-              <div class="username px-3 py-2 d-flex align-items-center">
-                <img src="img/profile1.jpg" alt="">
-                <a href="" class="ms-1 small">humamfakhri (7)</a>
-              </div>
-              <img src="img/Akt-1.jpg" class="card-img-top" alt="...">
-              <div class="card-body pb-2 pt-2">
-                <div class="icons mb-2">
-                  <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
-                  <a href="#" class="mx-lg-3 mx-1"><i class="fa-regular fa-comment-dots"></i></a>
-                  <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                  <p class="float-end mt-1">123 likes</p>
-                </div>
-                <div class="card-text">
-                  <div class="card-title">Tips Mencari Ide</div>
-                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek post...</div>
-                  <div class="card-time mt-2 text-end">2 jam lalu</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <a href="#">
-            <div class="card">
-              <div class="username px-3 py-2 d-flex align-items-center">
-                <img src="img/profile2.jpg" alt="">
-                <a href="" class="ms-1 small">ibadillah (6)</a>
-              </div>
-              <img src="img/Akt-2.jpg" class="card-img-top" alt="...">
-              <div class="card-body pb-2 pt-2">
-                <div class="icons mb-2">
-                  <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
-                  <a href="#" class="mx-lg-3 mx-1"><i class="fa-regular fa-comment-dots"></i></a>
-                  <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                  <p class="float-end mt-1">123 likes</p>
-                </div>
-                <div class="card-text">
-                  <div class="card-title">Tips Mencari Ide</div>
-                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek post...</div>
-                  <div class="card-time mt-2 text-end">2 jam lalu</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <a href="#">
-            <div class="card">
-              <div class="username px-3 py-2 d-flex align-items-center">
-                <img src="img/profile3.jpg" alt="">
-                <a href="" class="ms-1 small">rizky (3)</a>
-              </div>
-              <img src="img/Akt-3.jpg" class="card-img-top" alt="...">
-              <div class="card-body pb-2 pt-2">
-                <div class="icons mb-2">
-                  <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
-                  <a href="#" class="mx-lg-3 mx-1"><i class="fa-regular fa-comment-dots"></i></a>
-                  <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                  <p class="float-end mt-1">123 likes</p>
-                </div>
-                <div class="card-text">
-                  <div class="card-title">Tips Mencari Ide</div>
-                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek post...</div>
-                  <div class="card-time mt-2 text-end">2 jam lalu</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <a href="#">
-            <div class="card">
-              <div class="username px-3 py-2 d-flex align-items-center">
-                <img src="img/profile4.jpg" alt="">
-                <a href="" class="ms-1 small">syahrul (4)</a>
-              </div>
-              <img src="img/Akt-4.jpg" class="card-img-top" alt="...">
-              <div class="card-body pb-2 pt-2">
-                <div class="icons mb-2">
-                  <a href="#like"><i class="fa-regular fa-thumbs-up" onclick="like(this)"></i></a>
-                  <a href="#" class="mx-lg-3 mx-1"><i class="fa-regular fa-comment-dots"></i></a>
-                  <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                  <p class="float-end mt-1">123 likes</p>
-                </div>
-                <div class="card-text">
-                  <div class="card-title">Tips Mencari Ide</div>
-                  <div class="card-paragraph">Kakak mau kasih tau dulu tips mencari ide. Yuk cek post...</div>
-                  <div class="card-time mt-2 text-end">2 jam lalu</div>
-                </div>
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
       </div> <!-- CARDS  -->
     </div>
   </section>
-  <i class="fa-regular fa-thumbs-up" onclick="changeIcon(this)"></i>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
     
   <div class="sementara"></div>
   <!-- FOOTER -->
