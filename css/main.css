@@ -8,10 +8,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.sementara {
-  margin-bottom: 100vh;
-}
 /* NAVBAR */
+.navbar {
+  transition: .2s;
+}
 .navbar-brand img {
   width: clamp(100px, 15vw, 110px);
 }
@@ -20,6 +20,7 @@
 }
 .nav-scrolled {
   box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+  transition: .2s;
 }
 .navbar-toggler {
   border: none;
@@ -57,6 +58,7 @@ footer {
   width: 100%;
   border-top-left-radius: 15%;
   border-top-right-radius: 15%;
+  margin-top: 100px;
 }
 footer .smktelkom {
   width: clamp(9.38rem, calc(7.67rem + 8.54vw), 13.75rem);;

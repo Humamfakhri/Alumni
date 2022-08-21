@@ -45,7 +45,7 @@
       <p>Postingan aktivitas-aktivitas para Alumni SMK Telkom Bandung</p>
     </div>
   </section>
-  <a href="#top" class="top"><i class="fa-solid fa-circle-chevron-up"></i></a>
+  <a href="#top" class="top top-scrolled"><i class="fa-solid fa-circle-chevron-up"></i></a>
 
   <!-- SECTION -->
     <!-- PENCARIAN -->
@@ -65,7 +65,7 @@
       </div>
       <!-- CARDS -->
       <div class="row cards gy-lg-4 gx-lg-3 gy-md-3 gx-md-2 g-1">
-        <div class="col-lg-3 col-md-4 col">
+        <div class="col-lg-3 col-md-4 col-12">
           <div class="card">
             <div class="username d-flex align-items-center px-3 py-2">
               <a href="#username" class="avatar d-flex align-items-center">
@@ -95,7 +95,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col">
+        <div class="col-lg-3 col-md-4 col-12">
           <div class="card">
             <div class="username d-flex align-items-center px-3 py-2">
               <a href="#username" class="avatar d-flex align-items-center">
@@ -125,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col">
+        <div class="col-lg-3 col-md-4 col-12">
           <div class="card">
             <div class="username d-flex align-items-center px-3 py-2">
               <a href="#username" class="avatar d-flex align-items-center">
@@ -155,7 +155,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col">
+        <div class="col-lg-3 col-md-4 col-12">
           <div class="card">
             <div class="username d-flex align-items-center px-3 py-2">
               <a href="#username" class="avatar d-flex align-items-center">
@@ -194,16 +194,15 @@
       <li class="page-item disabled">
         <a class="page-link">Previous</a>
       </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link text-danger" href="#">1</a></li>
+      <li class="page-item"><a class="page-link text-danger" href="#">2</a></li>
+      <li class="page-item"><a class="page-link text-danger" href="#">3</a></li>
       <li class="page-item">
-        <a class="page-link" href="#">Next</a>
+        <a class="page-link text-danger" href="#">Next</a>
       </li>
     </ul>
   </nav>
     
-  <div class="sementara"></div>
   <!-- FOOTER -->
   <footer class="text-center">
     <img src="img/Sekunder.png" alt="" class="mt-5 mb-4 sekunder">
@@ -232,9 +231,11 @@
   <script>
     window.addEventListener('scroll', function(){
         let header = document.querySelector('nav');
+        let top = document.querySelector('.top');
         let windowPosition = window.scrollY > 0;
 
         header.classList.toggle('nav-scrolled', windowPosition);
+        top.classList.toggle('top-scrolled', windowPosition);
     });
   </script>
   </body>
