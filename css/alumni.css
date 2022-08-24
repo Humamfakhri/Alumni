@@ -1,0 +1,159 @@
+:root {
+  --teks: #1C3547;
+  --teks2: #5E6972;
+  --primary: #E4262C;
+  --biru: #003DB5;
+  --oren: #D76535;
+  --pink: #BF005C;
+  --epi: 'Epilogue', sans-serif;
+  --pop: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position:fixed;top:0;right:0;left:0;z-index:1030 !important;
+}
+.navbar-dark .nav-link {
+  color: #fff !important;
+}
+.primer, .putih {
+  display: none;
+}
+.primer-active {
+  display: inline;
+}
+.putih-active {
+  display: inline;
+}
+.merah {
+  color: red;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+}
+.hero-text {
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+.hero-text h1 {
+  font-weight: 700;
+  font-size: clamp(1.38rem, calc(0.74rem + 3.17vw), 3.00rem);
+}
+.hero-text h1::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 5rem;
+  background-color: var(--primary);
+  margin: 1rem auto;
+}
+.hero-text p {
+  font-family: var(--epi);
+  font-size: clamp(0.88rem, calc(0.63rem + 1.22vw), 1.50rem);
+}
+/* CONTENT */
+.filter {
+  font-size: clamp(0.94rem, calc(0.91rem + 0.12vw), 1.00rem);
+}
+.filter a {
+  text-decoration: none;
+  color: var(--teks2);
+}
+.filter a:hover {
+  text-decoration: underline;
+}
+.filter .filter-active {
+  color: var(--teks);
+}
+.v-line {
+  width: 1px;
+  height: 18px;
+  background-color: #969696;
+}
+.form input, .form select {
+  font-family: var(--epi);
+  color: var(--teks2);
+  border-radius: 20px;
+  font-size: clamp(0.94rem, calc(0.91rem + 0.12vw), 1.00rem);
+}
+.content .cari {
+  outline: none;
+  border: none;
+  background-color: var(--primary) !important;
+}
+.content .cari:hover {
+  background-color: #c91e24 !important;
+}
+/* CARD */
+.card {
+  position: relative;
+  border-radius: 20px;
+  transition: .2s;
+}
+.card:hover {
+  box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+  transition: .2s;
+}
+.angkatan {
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  left: 20px;
+  min-width: 25px;
+  border-radius: 20px;
+  border: 1px solid #969696;
+  color: #969696;
+}
+.card-body {
+  color: var(--teks2);
+}
+.card-name {
+  font-weight: 600;
+  font-size: clamp(1.00rem, calc(0.95rem + 0.24vw), 1.13rem);
+}
+.jurusan {
+  background-color: var(--biru);
+  border-radius: 20px;
+  display: inline-block;
+  font-size: clamp(0.88rem, calc(0.80rem + 0.37vw), 1.06rem);
+}
+.tahun span {
+  font-weight: 300;
+}
+.tahun, .status {
+  font-size: clamp(0.88rem, calc(0.83rem + 0.24vw), 1.00rem);
+}
+.status span {
+  color: var(--primary);
+}
+
+@media screen and (min-width:575px) {
+  .hero img {
+    margin-top: -3rem;
+  }
+  .hero-text {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (min-width:765px) {
+  .hero img {
+    margin-top: -8rem;
+  }
+}
+@media screen and (min-width:991px) {
+  .hero img {
+    margin-top: -15rem;
+  }
+}
+@media screen and (min-width:1200px) {
+  .hero img {
+    margin-top: -20rem;
+  }
+}
