@@ -33,16 +33,25 @@
 .hero {
   position: relative;
 }
+.hero img {
+  width: 100%;
+  height: auto;
+  margin-top: -2rem;
+}
 .hero-text {
   color: #fff;
   position: absolute;
-  top: 60%;
+  top: 55%;
   transform: translateY(-50%);
   left: 0;
   right: 0;
 }
 .hero-text h1 {
   font-weight: 700;
+  font-size: clamp(1.63rem, calc(0.99rem + 3.17vw), 3.25rem);
+}
+.hero-text span {
+  font-weight: 300;
   font-size: clamp(1.38rem, calc(0.74rem + 3.17vw), 3.00rem);
 }
 .hero-text h1::after {
@@ -56,6 +65,7 @@
 .hero-text p {
   font-family: var(--epi);
   font-size: clamp(0.88rem, calc(0.63rem + 1.22vw), 1.50rem);
+  font-weight: 300;
 }
 /* CONTENT */
 .filter {
@@ -64,12 +74,21 @@
 .filter a {
   text-decoration: none;
   color: var(--teks2);
+  font-size: 20px;
 }
 .filter a:hover {
   text-decoration: underline;
 }
 .filter .filter-active {
   color: var(--teks);
+}
+.filter-active::after {
+  content: '';
+  display: block;
+  background-color: var(--primary);
+  width: 50%;
+  height: 2px;
+  margin: 0 auto;
 }
 .v-line {
   width: 1px;
@@ -103,10 +122,11 @@
 .angkatan {
   position: absolute;
   text-align: center;
-  top: 15px;
-  left: 20px;
+  top: 2%;
+  left: 5%;
   min-width: 25px;
   border-radius: 20px;
+  font-size: clamp(0.88rem, calc(0.83rem + 0.24vw), 1.00rem);
   border: 1px solid #969696;
   color: #969696;
 }
@@ -133,27 +153,34 @@
   color: var(--primary);
 }
 
-@media screen and (min-width:575px) {
+@media screen and (min-width:440px) {
   .hero img {
-    margin-top: -3rem;
+    margin-top: -8rem;
   }
   .hero-text {
-    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (min-width:575px) {
+  .hero img {
+    margin-top: -14rem;
+  }
+  .hero-text {
     transform: translateY(-50%);
   }
 }
 @media screen and (min-width:765px) {
   .hero img {
-    margin-top: -8rem;
+    margin-top: -24rem;
   }
 }
 @media screen and (min-width:991px) {
   .hero img {
-    margin-top: -15rem;
+    margin-top: -30rem;
   }
 }
 @media screen and (min-width:1200px) {
   .hero img {
-    margin-top: -20rem;
+    margin-top: -42rem;
   }
 }
