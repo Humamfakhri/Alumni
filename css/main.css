@@ -2,6 +2,24 @@
   --teks: #1C3547;
   --teks2: #5E6972;
   --primary: #E4262C;
+  --biru: #003DB5;
+  --oren: #D76535;
+  --pink: #BF005C;
+  --epi: 'Epilogue', sans-serif;
+  --pop: 'Poppins', sans-serif;
+}
+/* UTILS */
+.epi {
+  font-family: var(--epi);
+}
+.teks {
+  color: var(--teks);
+}
+.teks2 {
+  color: var(--teks2);
+}
+.fw-semibold {
+  font-weight: 600;
 }
 
 * {

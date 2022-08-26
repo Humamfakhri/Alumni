@@ -68,13 +68,10 @@
   font-weight: 300;
 }
 /* CONTENT */
-.filter {
-  font-size: clamp(0.94rem, calc(0.91rem + 0.12vw), 1.00rem);
-}
 .filter a {
   text-decoration: none;
   color: var(--teks2);
-  font-size: 20px;
+  font-size: clamp(1.00rem, calc(0.90rem + 0.49vw), 1.25rem);
 }
 .filter a:hover {
   text-decoration: underline;
@@ -115,10 +112,6 @@
   border-radius: 20px;
   transition: .2s;
 }
-.card:hover {
-  box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
-  transition: .2s;
-}
 .angkatan {
   position: absolute;
   text-align: center;
@@ -136,12 +129,33 @@
 .card-name {
   font-weight: 600;
   font-size: clamp(1.00rem, calc(0.95rem + 0.24vw), 1.13rem);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .jurusan {
   background-color: var(--biru);
   border-radius: 20px;
   display: inline-block;
   font-size: clamp(0.88rem, calc(0.80rem + 0.37vw), 1.06rem);
+}
+.mm {
+  background-color: var(--pink);
+}
+.mm::after {
+  content: 'MM';
+}
+.tkj {
+  background-color: var(--biru);
+}
+.tkj::after {
+  content: 'TKJ';
+}
+.tjat {
+  background-color: var(--oren);
+}
+.tjat::after {
+  content: 'TJAT';
 }
 .tahun span {
   font-weight: 300;
@@ -152,6 +166,46 @@
 .status span {
   color: var(--primary);
 }
+/* MODAL */
+.modal {
+  --bs-modal-width: 700px;
+}
+.modal-content {
+  border-radius: 20px;
+}
+.modal-body {
+  color: var(--teks);
+}
+.modal-img {
+  max-width: 240px;
+}
+.nama {
+  line-height: 3;
+  font-weight: 600;
+}
+.kelas {
+  width: 4.4rem;
+}
+.kelas, .guru {
+  font-family: var(--epi);
+}
+.modal-icons a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: .1s;
+}
+.modal-icons a:hover {
+  background-color: var(--primary);
+  color: #fff;
+  transition: .1s;
+}
+.icon {
+  border: 1px solid var(--primary);
+  width: 35px;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+}
+
 
 @media screen and (min-width:440px) {
   .hero img {
@@ -177,6 +231,10 @@
 @media screen and (min-width:991px) {
   .hero img {
     margin-top: -30rem;
+  }
+  .card:hover {
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+    transition: .2s;
   }
 }
 @media screen and (min-width:1200px) {
