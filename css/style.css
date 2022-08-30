@@ -1,0 +1,91 @@
+:root {
+  --teks: #1C3547;
+  --teks2: #5E6972;
+  --primary: #E4262C;
+  --biru: #003DB5;
+  --oren: #D76535;
+  --pink: #BF005C;
+  --epi: 'Epilogue', sans-serif;
+  --pop: 'Poppins', sans-serif;
+}
+
+* {
+  color: var(--teks);
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #fff;
+}
+/* HERO */
+.hero {
+  padding-top: 90px;
+}
+.hero h1 {
+  font-size: clamp(1.63rem, calc(1.09rem + 2.68vw), 3.00rem);
+}
+.hero-subtitle {
+  font-size: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
+}
+.hero-subtitle::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 3rem;
+  background-color: var(--primary);
+  margin: 1rem auto;
+}
+.hero img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero .stats {
+  margin-top: clamp(1.56rem, calc(0.46rem + 5.49vw), 4.38rem);
+}
+.stats i {
+  color: var(--primary);
+}
+.stats .number {
+  font-size: clamp(1.50rem, calc(1.21rem + 1.46vw), 2.25rem);
+}
+.stats-text {
+  font-size: clamp(0.88rem, calc(0.73rem + 0.73vw), 1.25rem);;
+}
+.bekerja {
+  margin: 0 clamp(1.88rem, calc(1.14rem + 3.66vw), 3.75rem) 0 clamp(2.50rem, calc(1.52rem + 4.88vw), 5.00rem);
+}
+.kotak-merah {
+  position: relative;
+  width: 120px;
+  left: 0;
+  opacity: .3;
+  animation: floating 2.5s infinite alternate-reverse;
+  z-index: -1;
+}
+@keyframes floating {
+  from {
+    transform: translateY(60px);
+  }
+  to {
+      transform: translateY(90px);
+  }
+}
+
+
+
+/* DESKTOP */
+@media screen and (min-width:992px) {
+  .navbar {background-color: transparent;}
+  .nav-scrolled {background-color: #fff;}
+  .hero {padding-top: 90px;}
+  .hero-content {width: 52%;}
+  .hero img {width: 47%;max-width: 875px;}
+  .hero-subtitle::after {display: none;}
+}
+
+
+@media screen and (min-width:1200px) {
+  .hero-content {width: 43%;}
+  .hero img {max-width: 100%;}
+}

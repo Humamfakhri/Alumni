@@ -169,6 +169,7 @@
 /* MODAL */
 .modal {
   --bs-modal-width: 700px;
+  font-size: clamp(0.88rem, calc(0.83rem + 0.24vw), 1.00rem);;
 }
 .modal-content {
   border-radius: 20px;
@@ -177,11 +178,12 @@
   color: var(--teks);
 }
 .modal-img {
-  max-width: 240px;
+  max-width: 140px;
 }
 .nama {
   line-height: 3;
   font-weight: 600;
+  font-size: clamp(1.00rem, calc(0.90rem + 0.49vw), 1.25rem);
 }
 .kelas {
   width: 4.4rem;
@@ -193,6 +195,7 @@
   text-decoration: none;
   color: var(--primary);
   transition: .1s;
+  font-size: clamp(1.00rem, calc(0.90rem + 0.49vw), 1.25rem);
 }
 .modal-icons a:hover {
   background-color: var(--primary);
@@ -221,6 +224,9 @@
   }
   .hero-text {
     transform: translateY(-50%);
+  }
+  .modal-img {
+    max-width: 240px;
   }
 }
 @media screen and (min-width:765px) {

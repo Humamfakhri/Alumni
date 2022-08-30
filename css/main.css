@@ -12,6 +12,9 @@
 .epi {
   font-family: var(--epi);
 }
+.pri {
+  color: var(--primary);
+}
 .teks {
   color: var(--teks);
 }
@@ -40,6 +43,7 @@
   font-weight: 600;
 }
 .nav-scrolled {
+  background-color: #fff;
   box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
   transition: .2s;
 }
@@ -132,14 +136,4 @@ footer hr {
     margin: 0 auto;
     font-size: 15px;
   }
-}
-
-
-/* ===== TABLET ===== */
-@media screen and (min-width:768px) {
-
-}
-
-/* DESKTOP */
-@media screen and   (min-width:992px) {
 }
