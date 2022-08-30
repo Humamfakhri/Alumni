@@ -15,33 +15,61 @@
 
 /* NAVBAR */
 .navbar {
-  background-color: #fff;
+  position:fixed;top:0;right:0;left:0;z-index:1030 !important;
+}
+.navbar-dark .nav-link {
+  color: #fff !important;
+}
+.primer, .putih {
+  display: none;
+}
+.primer-active {
+  display: inline;
+}
+.putih-active {
+  display: inline;
+}
+.merah {
+  color: red;
 }
 /* HERO */
 .hero {
-  padding-top: 90px;
+  position: relative;
 }
-.hero h1 {
+.hero .hero-m {
+  width: 100%;
+  height: auto;
+}
+.hero-content {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+.hero-title {
   font-size: clamp(1.63rem, calc(1.09rem + 2.68vw), 3.00rem);
+  font-weight: 600;
 }
-.hero-subtitle {
-  font-size: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
+.hero-title span {
+  color: var(--primary);
 }
-.hero-subtitle::after {
+.hero-title::after {
   content: '';
-  display: block;
+  display: none;
   height: 2px;
   width: 3rem;
   background-color: var(--primary);
   margin: 1rem auto;
 }
-.hero img {
-  position: absolute;
-  top: 0;
-  right: 0;
+.hero-title, .hero-subtitle {
+  color: #fff;
 }
-.hero .stats {
-  margin-top: clamp(1.56rem, calc(0.46rem + 5.49vw), 4.38rem);
+.hero-subtitle {
+  font-size: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
+}
+.stats {
+  transform: translateY(-8vw);
 }
 .stats i {
   color: var(--primary);
@@ -76,16 +104,47 @@
 
 /* DESKTOP */
 @media screen and (min-width:992px) {
+  /* NAVBAR */
   .navbar {background-color: transparent;}
+  .navbar-dark .nav-link{color: #707071 !important; transition: none;}
+  .navbar-dark .nav-link:hover{color: #fff !important; transition: none;}
+  .navbar-dark .active{color: #fff !important;}
   .nav-scrolled {background-color: #fff;}
-  .hero {padding-top: 90px;}
-  .hero-content {width: 52%;}
-  .hero img {width: 47%;max-width: 875px;}
-  .hero-subtitle::after {display: none;}
+  .primer {display: block;} */
+  /* HERO */
+  .hero {
+    position: static;
+  }
+  .hero-content {
+    padding-top: 90px;
+    position: static;
+    transform: none;
+    width: 52%;
+  }
+  .hero-title, .hero-subtitle {
+    color: var(--teks);
+  }
+  .hero img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47%;
+    max-width: 875px;
+  }
+  .stats {
+    position: static;
+    margin-top: 4.38rem;
+    transform: none;
+  }
 }
 
 
 @media screen and (min-width:1200px) {
-  .hero-content {width: 43%;}
-  .hero img {max-width: 100%;}
+  .hero-content {
+    padding-top: 110px;
+    width: 43%;
+  }
+  .hero img {
+    max-width: 100%;
+  }
 }
