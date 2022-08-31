@@ -1,0 +1,76 @@
+:root {
+  --teks: #1C3547;
+  --teks2: #5E6972;
+  --primary: #E4262C;
+  --biru: #18A2B8;
+  --oren: #FFC108;
+  --pink: #DC3646;
+  --epi: 'Epilogue', sans-serif;
+  --pop: 'Poppins', sans-serif;
+}
+
+* {
+  color: var(--teks);
+}
+
+/* HERO */
+.hero {
+  padding-top: 4rem;
+}
+.hero-img {
+  width: 90%;
+  max-width: 500px;
+}
+.hero h1 {
+  font-size: clamp(1.50rem, calc(1.11rem + 1.95vw), 2.50rem);
+}
+/* CONTENT */
+.card > p {
+  font-size: clamp(1.00rem, calc(0.90rem + 0.49vw), 1.25rem);
+}
+.cs-img {
+  max-width: 200px;
+}
+.icon-list {
+  text-decoration: none;
+  border-radius: 20px;
+  transition: .2s;
+}
+.icon-list:hover {
+  transition: .2s;
+}
+.icon-list:hover > span {
+  color: #fff;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+}
+.icon i {
+  font-size: 14px;
+  color: #fff;
+}
+.phone:hover {
+  background-color: var(--biru);
+}
+.phone .icon {
+  background-color: var(--biru);
+}
+.icon .fa-whatsapp {
+  font-size: 22px;
+}
+.whatsapp:hover {
+  background-color: green;
+}
+.whatsapp .icon {
+  background-color: green;
+}
+.mail:hover {
+  background-color: var(--primary);
+}
+.mail .icon {
+  background-color: var(--primary);
+}
+.icon .fa-envelope {
+  font-size: 18px;
+}

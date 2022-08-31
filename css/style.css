@@ -12,7 +12,6 @@
 * {
   color: var(--teks);
 }
-
 /* NAVBAR */
 .navbar {
   position:fixed;top:0;right:0;left:0;z-index:1030 !important;
@@ -32,119 +31,124 @@
 .merah {
   color: red;
 }
+
 /* HERO */
+.section-title::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 3rem;
+  background-color: var(--primary);
+  margin: .5rem auto;
+}
 .hero {
   position: relative;
 }
-.hero .hero-m {
+.hero img {
   width: 100%;
   height: auto;
+  margin-top: -2rem;
 }
-.hero-content {
+.hero-text {
   position: absolute;
-  top: 30%;
+  top: 55%;
   transform: translateY(-50%);
   left: 0;
   right: 0;
 }
-.hero-title {
-  font-size: clamp(1.63rem, calc(1.09rem + 2.68vw), 3.00rem);
-  font-weight: 600;
+.hero-text h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(1.63rem, calc(0.99rem + 3.17vw), 3.25rem);
 }
-.hero-title span {
-  color: var(--primary);
+.hero-text span {
+  color: #fff;
+  font-weight: 300;
+  font-size: clamp(1.38rem, calc(0.74rem + 3.17vw), 3.00rem);
 }
-.hero-title::after {
+.hero-text h1::after {
   content: '';
-  display: none;
+  display: block;
   height: 2px;
-  width: 3rem;
+  width: 5rem;
   background-color: var(--primary);
   margin: 1rem auto;
 }
-.hero-title, .hero-subtitle {
-  color: #fff;
+/* .hero-text p {
+  font-family: var(--epi);
+  font-size: clamp(0.88rem, calc(0.63rem + 1.22vw), 1.50rem);
+  font-weight: 300;
+} */
+/* QUOTE */
+.quote {
+  margin-top: 100px;
 }
-.hero-subtitle {
-  font-size: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
-}
-.stats {
-  transform: translateY(-8vw);
-}
-.stats i {
-  color: var(--primary);
-}
-.stats .number {
-  font-size: clamp(1.50rem, calc(1.21rem + 1.46vw), 2.25rem);
-}
-.stats-text {
-  font-size: clamp(0.88rem, calc(0.73rem + 0.73vw), 1.25rem);;
-}
-.bekerja {
-  margin: 0 clamp(1.88rem, calc(1.14rem + 3.66vw), 3.75rem) 0 clamp(2.50rem, calc(1.52rem + 4.88vw), 5.00rem);
-}
-.kotak-merah {
+.section-text {
   position: relative;
-  width: 120px;
-  left: 0;
-  opacity: .3;
-  animation: floating 2.5s infinite alternate-reverse;
+}
+.section-text h1 {
+  font-size: clamp(1.25rem, calc(0.66rem + 2.93vw), 2.75rem);;
+}
+.section-text .q-depan {
+  top: -60px;
+  
+}
+.section-text .q-belakang {
+  bottom: -60px;
+  right: 7%;
+}
+.section-text .q-depan, .q-belakang {
+  width: 80px;
+  position: absolute;
   z-index: -1;
+  opacity: .7;
 }
-@keyframes floating {
-  from {
-    transform: translateY(60px);
-  }
-  to {
-      transform: translateY(90px);
-  }
+/* .section-text::before {
+  content: "";
+  font-family: var(--epi);
+  display: block;
+  position: absolute;
+  top: -40%;
+  left: 10%;
+  font-size: 100px;
+} */
+.quote p {
+  font-size: clamp(0.88rem, calc(0.63rem + 1.22vw), 1.50rem);
 }
 
-
-
-/* DESKTOP */
-@media screen and (min-width:992px) {
-  /* NAVBAR */
-  .navbar {background-color: transparent;}
-  .navbar-dark .nav-link{color: #707071 !important; transition: none;}
-  .navbar-dark .nav-link:hover{color: #fff !important; transition: none;}
-  .navbar-dark .active{color: #fff !important;}
-  .nav-scrolled {background-color: #fff;}
-  .primer {display: block;} */
-  /* HERO */
-  .hero {
-    position: static;
-  }
-  .hero-content {
-    padding-top: 90px;
-    position: static;
-    transform: none;
-    width: 52%;
-  }
-  .hero-title, .hero-subtitle {
-    color: var(--teks);
-  }
+@media screen and (min-width:440px) {
   .hero img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 47%;
-    max-width: 875px;
+    margin-top: -8rem;
   }
-  .stats {
-    position: static;
-    margin-top: 4.38rem;
-    transform: none;
+  .hero-text {
+    transform: translateY(-50%);
   }
 }
-
-
+@media screen and (min-width:575px) {
+  .hero img {
+    margin-top: -14rem;
+  }
+  .hero-text {
+    transform: translateY(-50%);
+  }
+}
+@media screen and (min-width:765px) {
+  .hero img {
+    margin-top: -24rem;
+  }
+}
+@media screen and (min-width:991px) {
+  .hero img {
+    margin-top: -30rem;
+  }
+}
+/* @media screen and (max-width:991px) {
+  .section-text {
+    width: 50%;
+  }
+} */
 @media screen and (min-width:1200px) {
-  .hero-content {
-    padding-top: 110px;
-    width: 43%;
-  }
   .hero img {
-    max-width: 100%;
+    margin-top: -42rem;
   }
 }

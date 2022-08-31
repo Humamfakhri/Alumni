@@ -2,9 +2,9 @@
   --teks: #1C3547;
   --teks2: #5E6972;
   --primary: #E4262C;
-  --biru: #003DB5;
-  --oren: #D76535;
-  --pink: #BF005C;
+  --biru: #18A2B8;
+  --oren: #FFC108;
+  --pink: #DC3646;
   --epi: 'Epilogue', sans-serif;
   --pop: 'Poppins', sans-serif;
 }
@@ -29,7 +29,14 @@
   color: red;
 }
 
-/* HERO */
+/* HERO */.section-title::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 3rem;
+  background-color: var(--primary);
+  margin: .5rem auto;
+}
 .hero {
   position: relative;
 }
