@@ -93,7 +93,6 @@
 }
 .avatar p {
   font-weight: 600;
-  font-family: var(--epi);
 }
 .avatar:hover {
   text-decoration: underline;
