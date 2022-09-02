@@ -59,8 +59,8 @@
   <!-- GRAFIK -->
   <section class="grafik">
     <div class="container">
-      <div class="section-text text-center">
-        <h1 class="fw-semibold d-inline-block mb-0">Grafik Data Alumni</h1>
+      <div class="section-text">
+        <h1 class="mb-0">Grafik Data Alumni</h1>
         <p class="epi teks2">Di bawah ini adalah grafik alumni berdasarkan program studinya.</p>
       </div>
       <div class="row align-items-center mt-3 mt-lg-5">
@@ -104,12 +104,12 @@
   <!-- POSTINGAN -->
   <section class="aktivitas">
     <div class="container">
-      <div class="section-text text-center mb-5">
-        <h1 class="fw-semibold d-inline-block mb-0">Aktivitas Alumni</h1>
+      <div class="section-text mb-3">
+        <h1 class="mb-0">Aktivitas Alumni</h1>
         <p class="epi teks2">Beberapa postingan aktivitas/event yang dilakukan alumni.</p>
       </div>
       <!-- CAROUSEL -->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselPostingan" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row justify-content-center bg-white">
@@ -313,12 +313,12 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" >
-          <i class="carousel-control-prev-icon fa-solid fa-circle-chevron-left" data-bs-target="#carouselExampleControls" data-bs-slide="prev"></i>
+        <button class="carousel-control-prev" type="button">
+          <i class="carousel-control-prev-icon fa-solid fa-circle-chevron-left" aria-hidden="true" data-bs-target="#carouselPostingan" data-bs-slide="prev"></i>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <i class="carousel-control-next-icon fa-solid fa-circle-chevron-right"></i>
+        <button class="carousel-control-next" type="button">
+          <i class="carousel-control-next-icon fa-solid fa-circle-chevron-right" aria-hidden="true" data-bs-target="#carouselPostingan" data-bs-slide="next"></i>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -326,6 +326,7 @@
     <div class="text-center mt-4"><a href="aktivitas.html" class="btn btn-outline-danger text-center mx-auto">Selengkapnya</a></div>
   </section>
 
+  <!-- PESAN -->
   <section class="pesan py-4 py-lg-5">
     <div class="container">
       <div class="row">
@@ -356,23 +357,97 @@
       </div>
     </div>
   </section>
-  
 
-  <div class="jarak"></div>
+  <!-- PARTNER -->
+  <section class="partner">
+    <div class="container">
+      <div class="section-text">
+        <h1>Partner Kami</h1>
+      </div>
+      <div class="row d-md-none">
+        <div class="col-6 px-3">
+          <img src="img/partner-2.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-6 px-3">
+          <img src="img/partner-3.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-6 px-3">
+          <img src="img/partner-1.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-6 px-3">
+          <img src="img/partner-4.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-6 px-3">
+          <img src="img/partner-5.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-6 px-3">
+          <img src="img/partner-6.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-6 px-3">
+          <img src="img/partner-7.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div id="carouselPartner" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row bg-white text-center align-items-center justify-content-center">
+              <div class="col-6 col-lg px-lg-2">
+                <img src="img/partner-1.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg px-lg-2">
+                <img src="img/partner-2.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg px-lg-2">
+                <img src="img/partner-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg px-lg-2">
+                <img src="img/partner-4.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row bg-white text-center align-items-center justify-content-center">
+              <div class="col-6 col-lg px-lg-2">
+                <img src="img/partner-5.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg px-lg-2">
+                <img src="img/partner-6.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg px-lg-2">
+                <img src="img/partner-7.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg px-lg-2">
+                <img src="img/partner-5.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button">
+          <i class="carousel-control-prev-icon fa-solid fa-circle-chevron-left" aria-hidden="true" data-bs-target="#carouselPartner" data-bs-slide="prev"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button">
+          <i class="carousel-control-next-icon fa-solid fa-circle-chevron-right" aria-hidden="true" data-bs-target="#carouselPartner" data-bs-slide="next"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
   <!-- FOOTER -->
   <footer class="text-center">
     <img src="img/Sekunder.png" alt="" class="mt-5 mb-4 sekunder">
     <div class="d-flex justify-content-center">
-      <a href="#" class="footer-icon me-3 text-center position-relative">
+      <a href="https://www.instagram.com/smktelbdg/" class="footer-icon me-3 text-center position-relative">
         <img src="img/ig.png" alt="" >
       </a>
-      <a href="#" class="footer-icon me-3 text-center position-relative">
+      <a href="https://www.facebook.com/smktelbdg" class="footer-icon me-3 text-center position-relative">
         <img src="img/fb.png" alt="">
       </a>
-      <a href="#" class="footer-icon me-3 text-center position-relative">
+      <a href="https://twitter.com/smktelbdg" class="footer-icon me-3 text-center position-relative">
         <img src="img/twitter.png" alt="" >
       </a>
-      <a href="#" class="footer-icon me-3 text-center position-relative">
+      <a href="https://www.youtube.com/c/SMKTelkomBandungJuara" class="footer-icon me-3 text-center position-relative">
         <img src="img/yt.png" alt="" >
       </a>
     </div>

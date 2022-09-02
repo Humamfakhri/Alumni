@@ -109,8 +109,13 @@
   right: -60px;
 }
 /* SECTION */
+.section-text {
+  text-align: center;
+}
 .section-text h1 {
   font-size: clamp(1.50rem, calc(1.01rem + 2.44vw), 2.75rem);
+  display: inline-block;
+  font-weight: 600;
 }
 .section-text h1::after, .aktivitas h1::after {
   content: '';
@@ -173,7 +178,7 @@
 }
 /* AKTIVITAS */
 .aktivitas {
-  margin-top: clamp(4.38rem, calc(3.16rem + 6.10vw), 7.50rem);
+  margin-top: clamp(6.25rem, calc(5.76rem + 2.44vw), 7.50rem);
 }
 .carousel {
   position: relative;
@@ -271,6 +276,13 @@
 .prev-pesan {
   background-color: var(--primary);
   border-radius: 10px;
+}
+/* PARTNER */
+.partner {
+  margin-top: 100px;
+}
+#carouselPartner img {
+  max-height: 111px;
 }
 
 @media screen and (min-width:440px) {
