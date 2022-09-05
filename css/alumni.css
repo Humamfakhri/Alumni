@@ -9,6 +9,14 @@
   --pop: 'Poppins', sans-serif;
 }
 
+/* NAVBAR */
+.navbar  {
+  background-color: #fff;
+  position:fixed;top:0;right:0;left:0;z-index:1030
+}
+.nav-scrolled {
+  background-color: #fff;
+}
 /* HERO */
 .hero {
   margin: 50px 0;

@@ -36,11 +36,6 @@
 .navbar {
   position:fixed;top:0;right:0;left:0;z-index:1030 !important;
 }
-.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle .icon-bar {
-  border-color: red;
-  color: red;
-  background-color: red;
-}
 .navbar-dark .nav-link {
   color: #fff !important;
 }
