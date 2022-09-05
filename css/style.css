@@ -36,17 +36,22 @@
 .navbar {
   position:fixed;top:0;right:0;left:0;z-index:1030 !important;
 }
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle .icon-bar {
+  border-color: red;
+  color: red;
+  background-color: red;
+}
 .navbar-dark .nav-link {
   color: #fff !important;
 }
-.primer, .putih {
+.putih {
   display: none;
 }
 .primer-active {
   display: inline;
 }
 .putih-active {
-  display: inline;
+  display: none;
 }
 .merah {
   color: red;
@@ -418,6 +423,25 @@
   }
 }
 @media screen and (min-width:991px) {
+  /* NAVBAR */
+  .navbar {
+    position:fixed;top:0;right:0;left:0;z-index:1030 !important;
+  }
+  .navbar-dark .nav-link {
+    color: #fff !important;
+  }
+  .primer, .putih {
+    display: none;
+  }
+  .primer-active {
+    display: inline;
+  }
+  .putih-active {
+    display: inline;
+  }
+  .merah {
+    color: red;
+  }
   .hero img {
     margin-top: -30rem;
   }

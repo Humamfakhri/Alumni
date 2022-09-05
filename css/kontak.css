@@ -5,6 +5,9 @@
   --biru: #18A2B8;
   --oren: #FFC108;
   --pink: #DC3646;
+  --bg-biru: #E3F8FA;
+  --bg-oren: #FFF9DD;
+  --bg-pink: #FFE6E2;
   --epi: 'Epilogue', sans-serif;
   --pop: 'Poppins', sans-serif;
 }
@@ -25,6 +28,14 @@
   font-size: clamp(1.50rem, calc(1.11rem + 1.95vw), 2.50rem);
 }
 /* CONTENT */
+.accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus, .accordion-button:focus  {
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+}
+.accordion-body {
+  font-family: var(--epi);
+  font-size: clamp(0.9rem, calc(0.83rem + 0.24vw), 1.00rem);
+  color: var(--teks2);
+}
 .card > p {
   font-size: clamp(1.00rem, calc(0.90rem + 0.49vw), 1.25rem);
 }
