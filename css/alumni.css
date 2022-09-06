@@ -19,7 +19,7 @@
 }
 /* HERO */
 .hero {
-  margin: 50px 0;
+  padding: 9rem 0 50px;
 }
 .hero img {
   max-width: clamp(12.50rem, calc(7.62rem + 24.39vw), 25.00rem);

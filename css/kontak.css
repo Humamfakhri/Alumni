@@ -24,25 +24,24 @@
   background-color: #fff;
 }
 /* HERO */
-.hero {
-  padding-top: 4rem;
+.hero-content {
+  padding-top: 100px;
+  height: 90vh;
 }
 .hero-img {
   width: 90%;
   max-width: 500px;
 }
 .hero h1 {
-  font-size: clamp(1.50rem, calc(1.11rem + 1.95vw), 2.50rem);
+  font-size: clamp(1.50rem, calc(0.91rem + 2.93vw), 3.00rem);
+}
+.hero h1 span {
+  color: var(--primary);
 }
 /* CONTENT */
-.accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus, .accordion-button:focus  {
-  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
-}
-.accordion-body {
-  font-family: var(--epi);
-  font-size: clamp(0.9rem, calc(0.83rem + 0.24vw), 1.00rem);
-  color: var(--teks2);
-}
+/* .content {
+  margin-top: 5rem;
+} */
 .card > p {
   font-size: clamp(1.00rem, calc(0.90rem + 0.49vw), 1.25rem);
 }
@@ -91,4 +90,23 @@
 }
 .icon .fa-envelope {
   font-size: 18px;
+}
+.accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus, .accordion-button:focus  {
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+}
+.accordion-body {
+  font-family: var(--epi);
+  font-size: clamp(0.9rem, calc(0.83rem + 0.24vw), 1.00rem);
+  color: var(--teks2);
+}
+
+@media screen and (max-height:700px) {
+  .hero-content {
+    height: 100vh;
+  }
+}
+@media screen and (min-height:991px) {
+  .hero-content {
+    height: 70vh;
+  }
 }

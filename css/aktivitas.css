@@ -10,24 +10,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.top {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 20px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  transform: scale(0);
-  transition: .1s;
-}
-.top i {
-  border-radius: 100%;
-  font-size: clamp(2.50rem, calc(2.30rem + 0.98vw), 3.00rem);
-  color: var(--primary);
-  box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
-}
-.top-scrolled {
-  transform: scale(1);
-  transition: .2s;
-}
 /* NAVBAR */
 .navbar  {
   background-color: #fff;
@@ -39,10 +21,11 @@
 /* HERO */
 .hero {
   position: relative;
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 .hero img {
-  width: clamp(21.88rem, calc(14.56rem + 36.59vw), 40.63rem);
+  width: clamp(18.00rem, calc(9.41rem + 42.93vw), 40.00rem);
+  /* width: clamp(21.88rem, calc(14.56rem + 36.59vw), 40.63rem); */
 }
 .heading {
   position: absolute;
@@ -86,11 +69,6 @@
 .card {
   border-radius: 15px;
 }
-.card:hover {
-  box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
-  transform: scale(1);  
-  transition: .2s;
-}
 .avatar p {
   font-weight: 600;
 }
@@ -108,12 +86,6 @@
 }
 .angkatan:hover {
   text-decoration: underline;
-}
-.card:hover > .card-pic img{
-  filter: brightness(50%);
-}
-.card:hover > .card-pic p{
-  display: block;
 }
 .card-pic {
   position: relative;
@@ -159,25 +131,16 @@
   font-family: var(--epi);
 }
 
-@media screen and (min-width:768px) {
-  .top {
-    bottom: 40px;
-    right: 40px;
+@media screen and (min-width:992px) {
+  .card:hover {
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+    transform: scale(1);  
+    transition: .2s;
   }
-}
-
-@media screen and (max-width:991px) {
   .card:hover > .card-pic img{
-    filter: none;
+    filter: brightness(50%);
   }
   .card:hover > .card-pic p{
-    display: none;
-  }
-}
-
-@media screen and (min-width:991px) {
-  .top {
-    bottom: 40px;
-    right: 30px;
+    display: block;
   }
 }

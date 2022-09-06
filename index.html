@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <a id="top"></a>
 
   <!-- NAVBAR -->
   <nav id="navigation-bar" class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -39,13 +40,20 @@
 
   <!-- HERO -->
   <section class="hero text-center">
-    <img src="img/alumni2.jpg" alt="" >
+    <!-- <img src="img/index2.jpg" alt="" > -->
     <div class="hero-text">
-      <h1>A l u m n i<br><span>SMK Telkom Bandung</span></h1>
-      <p>"Simpanlah <span>kenangan</span> untuk masa depan"</p>
+      <h1>Alumni</h1>
+      <h2>SMK Telkom Bandung</h2>
+      <a href="#content" class="text-decoration-none">
+        <!-- <i class="fa-solid fa-chevron-down "></i> -->
+        <i class="fa-solid fa-angles-down d-block text-center fs-1 mt-5"></i>
+      </a>
+      <!-- <p>"Simpanlah <span>kenangan</span> untuk masa depan"</p> -->
     </div>
   </section>
+  <a href="#top" class="top"><i class="fa-solid fa-circle-chevron-up"></i></a>
 
+  <a id="content"></a>
   <section class="hero-stats text-center">
     <div class="container">
       <div class="row box justify-content-center mx-auto text-center">
@@ -82,11 +90,11 @@
   <!-- GRAFIK -->
   <section class="grafik">
     <div class="container">
-      <div class="elements d-none d-md-flex">
+      <!-- <div class="elements d-none d-md-flex">
         <div class="biru-muda d-flex justify-content-center align-items-center">
           <div class="biru"></div>
         </div>
-      </div>
+      </div> -->
       <div class="section-text">
         <h1 class="mb-0">Grafik Data Alumni</h1>
         <p class="epi teks2">Di bawah ini adalah grafik alumni berdasarkan program studinya.</p>
@@ -106,21 +114,21 @@
       <div class="row text-center justify-content-center mt-5 gy-4 gx-2 gx-lg-4">
         <div class="col-6 col-md-4 col-lg-3">
           <div class="prodi tkj pt-lg-5 pb-4">
-            <h5>Teknik Komputer<br>dan Jaringan</h5>
+            <h5 class="fw-semibold">Teknik Komputer<br>dan Jaringan</h5>
             <img src="img/TKJ.png" alt="Logo TKJ SMK Telkom Bandung">
             <div class="total-prodi px-3 py-1">384</div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <div class="prodi tjat pt-lg-5 pb-4">
-            <h5>Teknik Jaringan Akses<br>dan Telekomunikasi</h5>
+            <h5 class="fw-semibold">Teknik Jaringan Akses<br>dan Telekomunikasi</h5>
             <img src="img/TJAT.png" alt="Logo TKJ SMK Telkom Bandung">
             <div class="total-prodi px-3 py-1">192</div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <div class="prodi mm pt-lg-5 pb-4">
-            <h5>Teknik Komputer<br>dan Jaringan</h5>
+            <h5 class="fw-semibold">Multimedia</h5>
             <img src="img/MM.png" alt="Logo TKJ SMK Telkom Bandung">
             <div class="total-prodi px-3 py-1">192</div>
           </div>
@@ -354,33 +362,20 @@
     <div class="text-center mt-4"><a href="aktivitas.html" class="btn btn-outline-danger text-center mx-auto">Selengkapnya</a></div>
   </section>
 
-  <!-- PESAN -->
-  <section class="pesan py-4 py-lg-5">
+  <!-- COMMENT -->
+  <section class="comment mx-auto">
     <div class="container">
-      <div class="row">
-        <div class="col col-lg-3 my-auto text-center text-lg-start mb-4 mb-lg-0">
-          <img src="img/pesan.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-lg-6 my-auto col-pesan">
-          <img src="img/quote-depan.png" alt="" class="d-none d-md-block d-lg-none">
-          <p class="epi">SMK Telkom Bandung memberikan begitu banyak 
-            pengalaman bagi saya, baik itu pengalaman dalam
-            bidang berorganisasi maupun dalam bidang keahlian
-            yang saya pelajari yaitu Jaringan Telekomunikasi.</p>
-          <p class="epi text-end text-lg-start">- Pak Abdul Mutohhar</p>
-        </div>
-        <div class="col-lg-3 d-flex flex-column justify-content-between">
-          <div>
-            <img src="img/quote-belakang.png" alt="" class="pesan-quote text-center d-none d-lg-block">
+      <div class="section-text mb-5">
+        <h1>Apa yang Alumni Katakan</h1>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col text-end pe-4">
+          <div class="commenter">
+            <img src="img/profile1.jpg" class="img-fluid rounded-circle" alt="">
           </div>
-          <div class="text-center text-lg-start mt-3">
-            <a href="#" class="prev-pesan px-2 py-1 me-3">
-              <i class="fa-solid fa-chevron-left"></i>
-            </a>
-            <a href="#" class="prev-pesan px-2 py-1">
-              <i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </div>
+        </div>
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur odio aspernatur ullam a velit, odit quo alias aliquid quae nemo reprehenderit eum earum itaque temporibus autem officia. Incidunt, odit!</p>
         </div>
       </div>
     </div>
@@ -520,6 +515,7 @@
         console.log('Media Query Matched!')
         window.addEventListener('scroll', function(){
           let header = document.getElementById('navigation-bar')
+          let top = document.querySelector('.top')
           let primer = document.querySelector('.primer')
           let putih = document.querySelector('.putih')
           let windowPosition = window.scrollY > 0
@@ -527,11 +523,13 @@
 
           if (window.scrollY == 0) {
             header.classList.remove('nav-scrolled', windowPosition)
+            top.classList.remove('top-scrolled', windowPosition)
             header.classList.add('navbar-dark', windowPosition)
             header.classList.remove('bg-light', windowPosition)
             primer.classList.remove('primer-active', windowPosition)
             putih.classList.add('putih-active', windowPosition)
           } else {
+            top.classList.add('top-scrolled', windowPosition)
             header.classList.add('nav-scrolled', windowPosition)
             header.classList.remove('navbar-dark', windowPosition)
             header.classList.add('bg-light', windowPosition)
@@ -540,6 +538,12 @@
           }
         })
       }else{
+        window.addEventListener('scroll', function(){
+          let top = document.querySelector('.top')
+          let windowPosition = window.scrollY > 0
+
+          top.classList.toggle('top-scrolled', windowPosition)
+        })
         let header = document.getElementById('navigation-bar')
         header.classList.add('nav-scrolled')
         header.classList.remove('navbar-dark')
