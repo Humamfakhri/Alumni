@@ -39,6 +39,12 @@
 .navbar-brand img {
   width: clamp(100px, 15vw, 110px);
 }
+.navbar-toggler, .navbar-toggler:focus {
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
 .navbar-nav > .active {
   font-weight: 600;
 }
@@ -47,17 +53,14 @@
   box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
   transition: .2s;
 }
-.navbar-toggler {
-  border: none;
-}
-.nav-link {
+.navbar-nav .nav-link {
   position: relative;
 }
-.nav-link:hover {
+.navbar-nav .nav-link:hover {
   transition: none;
   color: #fff !important;
 }
-.nav-link:hover::after, .active::after {
+.navbar-nav .nav-link:hover::after, .navbar-nav .active::after {
   content: '';
   display: block;
   position: absolute;
@@ -71,7 +74,7 @@
   border-radius: 20px;
   background-color: var(--primary);
 }
-.active {
+.navbar-nav .active {
   position: relative;
   color: #fff !important;
 }
@@ -151,7 +154,7 @@ footer hr {
 
 
 @media screen and (max-width:992px) {
-  .nav-link {
+  .navbar-nav .nav-link {
     width: 50%;
     margin: 0 auto;
     font-size: 15px;

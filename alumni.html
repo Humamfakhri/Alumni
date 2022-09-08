@@ -48,7 +48,7 @@
 
   <section class="content mb-5">
     <div class="container">
-      <div class="filter d-flex align-items-center mt-5 mb-4 justify-content-center">
+      <!-- <div class="filter d-flex align-items-center mt-5 mb-4 justify-content-center">
         <a href="#" class="filter-active">Data Diri</a>
         <div class="v-line mx-3"></div>
         <a href="#">Skill</a>
@@ -80,7 +80,77 @@
         <div class="col-lg-2 col-5 text-center text-lg-start">
           <button class="btn rounded-pill text-light cari px-md-4 px-3 py-1">Cari <i class="small fa-solid fa-magnifying-glass"></i></button>
         </div>
+      </div> -->
+      <!-- TABS -->
+      <ul class="nav nav-tabs justify-content-center align-items-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link tab-link active" id="datadiri-tab" data-bs-toggle="tab" data-bs-target="#datadiri-tab-pane" type="button" role="tab" aria-controls="datadiri-tab-pane" aria-selected="true">Data Diri</button>
+        </li>
+        <div class="v-line mx-3"></div>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link tab-link" id="skill-tab" data-bs-toggle="tab" data-bs-target="#skill-tab-pane" type="button" role="tab" aria-controls="skill-tab-pane" aria-selected="false">Skill</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active pt-2 pt-lg-3" id="datadiri-tab-pane" role="tabpanel" aria-labelledby="datadiri-tab" tabindex="0">
+          <div class="row g-2 g-lg-3 mb-5 form justify-content-center align-items-center">
+            <div class="col-lg-3 col-12">
+              <input type="text" class="form-control" placeholder="Nama" aria-label="First name">
+            </div>
+            <div class="col-lg-2 col-6">
+              <select id="inputState" class="form-select">
+                <option selected>Jurusan</option>
+                <option>MM</option>
+                <option>TKJ</option>
+                <option>TJAT</option>
+              </select>      
+            </div>
+            <div class="col-lg-2 col-6">
+              <select id="inputState" class="form-select">
+                <option selected>Tahun Lulus</option>
+                <option>2022 (Angkatan 7)</option>
+                <option>2021 (Angkatan 6)</option>
+                <option>2020 (Angkatan 5)</option>
+                <option>2019 (Angkatan 4)</option>
+                <option>2018 (Angkatan 3)</option>
+                <option>2017 (Angkatan 2)</option>
+                <option>2016 (Angkatan 1)</option>
+              </select>      
+            </div>
+            <div class="col-lg-2 col-5 text-center text-lg-start">
+              <button class="btn rounded-pill text-light cari px-md-4 px-3 py-1 mt-2">Cari <i class="small fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade pt-2 pt-lg-3" id="skill-tab-pane" role="tabpanel" aria-labelledby="skill-tab" tabindex="0">
+          <div class="row g-2 g-lg-3 mb-5 form justify-content-center align-items-center">
+            <div class="col-lg-2 col-6">
+              <select id="inputState" class="form-select">
+                <option selected>Keahlian</option>
+                <option>Android Developer</option>
+                <option>Video Editor</option>
+                <option>Website Developer</option>
+              </select>      
+            </div>
+            <div class="col-lg-2 col-6">
+              <select id="inputState" class="form-select">
+                <option selected>Tahun Lulus</option>
+                <option>2022 (Angkatan 7)</option>
+                <option>2021 (Angkatan 6)</option>
+                <option>2020 (Angkatan 5)</option>
+                <option>2019 (Angkatan 4)</option>
+                <option>2018 (Angkatan 3)</option>
+                <option>2017 (Angkatan 2)</option>
+                <option>2016 (Angkatan 1)</option>
+              </select>      
+            </div>
+            <div class="col-lg-2 col-5 text-center text-lg-start">
+              <button class="btn rounded-pill text-light cari px-md-4 px-3 py-1 mt-2">Cari <i class="small fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+        </div>
       </div>
+      
       <!-- CARDS -->
       <div class="row g-3 g-md-4">
         <div class="col-lg-3 col-md-4 col-6">

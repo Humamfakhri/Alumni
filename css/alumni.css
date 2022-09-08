@@ -63,6 +63,37 @@
 .content .cari:hover {
   background-color: #c91e24 !important;
 }
+.nav-tabs .tab-link:focus, .nav-tabs .tab-link:hover, .tab-link {
+  border-color: transparent;
+}
+.tab-link.active::after, .tab-link:hover::after, .tab-link::after {
+  content: '';
+  display: block;
+  color: var(--teks) !important;
+  background-color: var(--primary);
+  width: 50%;
+  height: 2px;
+  margin: 0 auto;
+}
+.tab-link {
+  color: var(--teks2);
+  font-size: clamp(1.00rem, calc(0.90rem + 0.49vw), 1.25rem);
+}
+.tab-link::after {
+  opacity: 0;
+}
+.tab-link:hover {
+  color: var(--teks);
+}
+.tab-link.active::after {
+  opacity: 1;
+}
+.tab-link.active {
+  color: var(--teks) !important;
+}
+.nav-tabs {
+  --bs-nav-tabs-border-width: 0;
+}
 /* CARD */
 .card {
   position: relative;

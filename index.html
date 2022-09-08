@@ -350,11 +350,11 @@
           </div>
         </div>
         <button class="carousel-control-prev" type="button">
-          <i class="carousel-control-prev-icon fa-solid fa-circle-chevron-left" aria-hidden="true" data-bs-target="#carouselPostingan" data-bs-slide="prev"></i>
+          <i class="carousel-control-prev-icon prev-post fa-solid fa-circle-chevron-left" aria-hidden="true" data-bs-target="#carouselPostingan" data-bs-slide="prev"></i>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button">
-          <i class="carousel-control-next-icon fa-solid fa-circle-chevron-right" aria-hidden="true" data-bs-target="#carouselPostingan" data-bs-slide="next"></i>
+          <i class="carousel-control-next-icon next-post fa-solid fa-circle-chevron-right" aria-hidden="true" data-bs-target="#carouselPostingan" data-bs-slide="next"></i>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -363,24 +363,63 @@
   </section>
 
   <!-- COMMENT -->
-  <section class="comment mx-auto">
+  <section class="comment py-5">
     <div class="container">
-      <div class="section-text mb-5">
-        <h1>Apa yang Alumni Katakan</h1>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col comment-img text-end pe-4">
-          <div class="commenter">
-            <img src="img/profile5.jpg" class="img-fluid rounded-circle" alt="">
-          </div>
+      <div class="row align-items-center">
+        <div class="col">
+          <h1 class="fw-semibold text-center mb-5 mb-lg-0 text-lg-end text-white">Bagaimana Kesan Alumni terhadap SMK Telkom Bandung?</h1>
         </div>
-        <div class="col ps-4 comment-text-col align-items-center">
-          <h2 class="text-start fw-semibold mb-3">Steve Harrington</h2>
-          <div class="comment-text">
-            <i class="fa-solid fa-quote-left fs-1"></i>
-            <i class="fa-solid fa-quote-right fs-1"></i>
-            <p class="epi teks2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur odio aspernatur ullam a velit, odit quo alias aliquid quae nemo reprehenderit eum earum itaque temporibus autem officia. Incidunt!</p>
+        <div class="col-lg">
+          <div id="carouselComment" class="carousel carouselComment slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="comment-box text-center shadow py-4 px-4 py-lg-5">
+                  <h4 class="comment-title fw-semibold mb-4 d-none d-lg-block">Yang Alumni Katakan</h4>
+                  <img src="img/profile5.jpg" class="img-fluid rounded-circle" alt="">
+                  <h5 class="commenter-name fw-semibold mb-0 mt-2">Steve Harrington</h5>
+                  <small class="teks2 d-block mb-4">Angkatan 1 (2013-2016)</small>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem fugiat rerum vitae odio aperiam cumque harum quae, nemo recusandae excepturi assumenda sequi autem accusantium voluptatum, sed eaque.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="comment-box text-center shadow py-4 px-4 py-lg-5">
+                  <h4 class="comment-title fw-semibold mb-4 d-none d-lg-block">Yang Alumni Katakan</h4>
+                  <img src="img/profile1.jpg" class="img-fluid rounded-circle" alt="">
+                  <h5 class="commenter-name fw-semibold mb-0 mt-2">Humam Ibadillah Fakhri</h5>
+                  <small class="teks2 d-block mb-4">Angkatan 7 (2019-2022)</small>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ad ea nam provident harum reiciendis porro voluptatum eaque ipsam, placeat architecto quae, sapiente beatae corrupti, veniam consectetur animi et.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="comment-box text-center shadow py-4 px-4 py-lg-5">
+                  <h4 class="comment-title fw-semibold mb-4 d-none d-lg-block">Yang Alumni Katakan</h4>
+                  <img src="img/profile2.jpg" class="img-fluid rounded-circle" alt="">
+                  <h5 class="commenter-name fw-semibold mb-0 mt-2">Dimas Prasetya</h5>
+                  <small class="teks2 d-block mb-4">Angkatan 4 (2016-2019)</small>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus accusantium voluptatibus esse libero ipsa, neque labore similique in et doloribus dignissimos ut nobis. Eos, cum debitis! Repellat laboriosam accusantium delectus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button">
+              <i class="carousel-control-prev-icon prev-comment fa-solid fa-chevron-left" aria-hidden="true" data-bs-target="#carouselComment" data-bs-slide="prev"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button">
+              <i class="carousel-control-next-icon next-comment fa-solid fa-chevron-right" aria-hidden="true" data-bs-target="#carouselComment" data-bs-slide="next"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+          <!-- <div class="comment-box text-center shadow py-5 px-4 ms-4">
+            <h4 class="comment-title fw-semibold mb-4 d-none d-lg-block">Yang Alumni Katakan</h4>
+            <img src="img/profile5.jpg" class="img-fluid rounded-circle" alt="">
+            <h5 class="commenter-name fw-semibold mb-0 mt-2">Steve Harrington</h5>
+            <small class="teks2 d-block mb-4">Alumni Angkatan 7</small>
+            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem fugiat rerum vitae odio aperiam cumque harum quae, nemo recusandae excepturi assumenda sequi autem accusantium voluptatum, sed eaque facere nobis impedit?
+            </small>
+          </div> -->
         </div>
       </div>
     </div>
@@ -489,77 +528,73 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
   <script>
-    // window.addEventListener('scroll', function(){
-    //   let header = document.getElementById('navigation-bar');
-    //   let primer = document.querySelector('.primer');
-    //   let putih = document.querySelector('.putih');
-    //   let windowPosition = window.scrollY > 0;
+    window.addEventListener('scroll', function(){
+      let header = document.getElementById('navigation-bar');
+      let primer = document.querySelector('.primer');
+      let putih = document.querySelector('.putih');
+      let windowPosition = window.scrollY > 0;
 
 
-    //   if (window.scrollY == 0) {
-    //     header.classList.remove('nav-scrolled', windowPosition);
-    //     header.classList.add('navbar-dark', windowPosition);
-    //     header.classList.remove('bg-light', windowPosition);
-    //     primer.classList.remove('primer-active', windowPosition);
-    //     putih.classList.add('putih-active', windowPosition);
-    //   } else {
-    //     header.classList.add('nav-scrolled', windowPosition);
-    //     header.classList.remove('navbar-dark', windowPosition);
-    //     header.classList.add('bg-light', windowPosition);
-    //     primer.classList.add('primer-active', windowPosition);
-    //     putih.classList.remove('putih-active', windowPosition);
-    //   }
-    // });
-
-    const mediaQuery = window.matchMedia('(min-width: 992px)')
-
-    function responsive(e) {
-      // Check if the media query is true
-      if (e.matches) {
-        // Then log the following message to the console
-        console.log('Media Query Matched!')
-        window.addEventListener('scroll', function(){
-          let header = document.getElementById('navigation-bar')
-          let top = document.querySelector('.top')
-          let primer = document.querySelector('.primer')
-          let putih = document.querySelector('.putih')
-          let windowPosition = window.scrollY > 0
-
-
-          if (window.scrollY == 0) {
-            header.classList.remove('nav-scrolled', windowPosition)
-            top.classList.remove('top-scrolled', windowPosition)
-            header.classList.add('navbar-dark', windowPosition)
-            header.classList.remove('bg-light', windowPosition)
-            primer.classList.remove('primer-active', windowPosition)
-            putih.classList.add('putih-active', windowPosition)
-          } else {
-            top.classList.add('top-scrolled', windowPosition)
-            header.classList.add('nav-scrolled', windowPosition)
-            header.classList.remove('navbar-dark', windowPosition)
-            header.classList.add('bg-light', windowPosition)
-            primer.classList.add('primer-active', windowPosition)
-            putih.classList.remove('putih-active', windowPosition)
-          }
-        })
-      }else{
-        window.addEventListener('scroll', function(){
-          let top = document.querySelector('.top')
-          let windowPosition = window.scrollY > 0
-
-          top.classList.toggle('top-scrolled', windowPosition)
-        })
-        let header = document.getElementById('navigation-bar')
-        header.classList.add('nav-scrolled')
-        header.classList.remove('navbar-dark')
+      if (window.scrollY == 0) {
+        header.classList.remove('nav-scrolled', windowPosition);
+        header.classList.add('navbar-dark', windowPosition);
+        header.classList.remove('bg-light', windowPosition);
+        primer.classList.remove('primer-active', windowPosition);
+        putih.classList.add('putih-active', windowPosition);
+      } else {
+        header.classList.add('nav-scrolled', windowPosition);
+        header.classList.remove('navbar-dark', windowPosition);
+        header.classList.add('bg-light', windowPosition);
+        primer.classList.add('primer-active', windowPosition);
+        putih.classList.remove('putih-active', windowPosition);
       }
-    }
+    });
 
-    // Register event listener
-    mediaQuery.addListener(responsive)
+    // const mediaQuery = window.matchMedia('(min-width: 992px)')
 
-    // Initial check
-    responsive(mediaQuery)
+    // function responsive(e) {
+    //   if (e.matches) {
+    //     console.log('Media Query Matched!')
+    //     window.addEventListener('scroll', function(){
+    //       let header = document.getElementById('navigation-bar')
+    //       let top = document.querySelector('.top')
+    //       let primer = document.querySelector('.primer')
+    //       let putih = document.querySelector('.putih')
+    //       let windowPosition = window.scrollY > 0
+
+
+    //       if (window.scrollY == 0) {
+    //         header.classList.remove('nav-scrolled', windowPosition)
+    //         top.classList.remove('top-scrolled', windowPosition)
+    //         header.classList.add('navbar-dark', windowPosition)
+    //         header.classList.remove('bg-light', windowPosition)
+    //         primer.classList.remove('primer-active', windowPosition)
+    //         putih.classList.add('putih-active', windowPosition)
+    //       } else {
+    //         top.classList.add('top-scrolled', windowPosition)
+    //         header.classList.add('nav-scrolled', windowPosition)
+    //         header.classList.remove('navbar-dark', windowPosition)
+    //         header.classList.add('bg-light', windowPosition)
+    //         primer.classList.add('primer-active', windowPosition)
+    //         putih.classList.remove('putih-active', windowPosition)
+    //       }
+    //     })
+    //   }else{
+    //     window.addEventListener('scroll', function(){
+    //       let top = document.querySelector('.top')
+    //       let windowPosition = window.scrollY > 0
+
+    //       top.classList.toggle('top-scrolled', windowPosition)
+    //     })
+    //     let header = document.getElementById('navigation-bar')
+    //     header.classList.add('nav-scrolled')
+    //     header.classList.remove('navbar-dark')
+    //   }
+    // }
+
+    // mediaQuery.addListener(responsive)
+
+    // responsive(mediaQuery)
   </script>
   </body>
 </html>
