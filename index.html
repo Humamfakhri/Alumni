@@ -377,7 +377,8 @@
                   <h4 class="comment-title fw-semibold mb-4 d-none d-lg-block">Yang Alumni Katakan</h4>
                   <img src="img/profile5.jpg" class="img-fluid rounded-circle" alt="">
                   <h5 class="commenter-name fw-semibold mb-0 mt-2">Steve Harrington</h5>
-                  <small class="teks2 d-block mb-4">Angkatan 1 (2013-2016)</small>
+                  <small class="teks2 d-block mb-3">Angkatan 1 (2013-2016)</small>
+                  <i class="fa-solid fa-quote-left fs-2 mb-1 pri"></i>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem fugiat rerum vitae odio aperiam cumque harum quae, nemo recusandae excepturi assumenda sequi autem accusantium voluptatum, sed eaque.
                   </p>
                 </div>
@@ -387,7 +388,8 @@
                   <h4 class="comment-title fw-semibold mb-4 d-none d-lg-block">Yang Alumni Katakan</h4>
                   <img src="img/profile1.jpg" class="img-fluid rounded-circle" alt="">
                   <h5 class="commenter-name fw-semibold mb-0 mt-2">Humam Ibadillah Fakhri</h5>
-                  <small class="teks2 d-block mb-4">Angkatan 7 (2019-2022)</small>
+                  <small class="teks2 d-block mb-3">Angkatan 7 (2019-2022)</small>
+                  <i class="fa-solid fa-quote-left fs-2 mb-1 pri"></i>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ad ea nam provident harum reiciendis porro voluptatum eaque ipsam, placeat architecto quae, sapiente beatae corrupti, veniam consectetur animi et.
                   </p>
                 </div>
@@ -397,7 +399,8 @@
                   <h4 class="comment-title fw-semibold mb-4 d-none d-lg-block">Yang Alumni Katakan</h4>
                   <img src="img/profile2.jpg" class="img-fluid rounded-circle" alt="">
                   <h5 class="commenter-name fw-semibold mb-0 mt-2">Dimas Prasetya</h5>
-                  <small class="teks2 d-block mb-4">Angkatan 4 (2016-2019)</small>
+                  <small class="teks2 d-block mb-3">Angkatan 4 (2016-2019)</small>
+                  <i class="fa-solid fa-quote-left fs-2 mb-1 pri"></i>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus accusantium voluptatibus esse libero ipsa, neque labore similique in et doloribus dignissimos ut nobis. Eos, cum debitis! Repellat laboriosam accusantium delectus.
                   </p>
                 </div>
@@ -490,11 +493,11 @@
           </div>
         </div>
         <button class="carousel-control-prev" type="button">
-          <i class="carousel-control-prev-icon fa-solid fa-circle-chevron-left" aria-hidden="true" data-bs-target="#carouselPartner" data-bs-slide="prev"></i>
+          <i class="carousel-control-prev-icon prev-post fa-solid fa-circle-chevron-left" aria-hidden="true" data-bs-target="#carouselPartner" data-bs-slide="prev"></i>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button">
-          <i class="carousel-control-next-icon fa-solid fa-circle-chevron-right" aria-hidden="true" data-bs-target="#carouselPartner" data-bs-slide="next"></i>
+          <i class="carousel-control-next-icon next-post fa-solid fa-circle-chevron-right" aria-hidden="true" data-bs-target="#carouselPartner" data-bs-slide="next"></i>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -530,6 +533,7 @@
   <script>
     window.addEventListener('scroll', function(){
       let header = document.getElementById('navigation-bar');
+      let top = document.querySelector('.top')
       let primer = document.querySelector('.primer');
       let putih = document.querySelector('.putih');
       let windowPosition = window.scrollY > 0;
@@ -537,12 +541,14 @@
 
       if (window.scrollY == 0) {
         header.classList.remove('nav-scrolled', windowPosition);
+        top.classList.remove('top-scrolled', windowPosition)
         header.classList.add('navbar-dark', windowPosition);
         header.classList.remove('bg-light', windowPosition);
         primer.classList.remove('primer-active', windowPosition);
         putih.classList.add('putih-active', windowPosition);
       } else {
         header.classList.add('nav-scrolled', windowPosition);
+        top.classList.add('top-scrolled', windowPosition)
         header.classList.remove('navbar-dark', windowPosition);
         header.classList.add('bg-light', windowPosition);
         primer.classList.add('primer-active', windowPosition);
